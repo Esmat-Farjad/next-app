@@ -1,1 +1,15 @@
 page title:
+"""export const metadata = Metadata{
+    title:{
+        absolute: "",//absolute title name of the page
+        default: "", //default title name of the page
+        template: "%s | [general title name ]", // dynamic title page name %s used as dynamic name for the pages
+    }
+    description: "title description",
+}"""
+
+component navigation:
+used to navigate between component
+props > replace: is used to replace the url with new url it avoid back navigation
+<link> tag is used to navigate between component 
+
