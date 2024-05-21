@@ -8,7 +8,7 @@ export default function BlogReviews(
         }
     }) {
         if(parseInt(params.reviewId) > 1000){
-            notFound();
+            throw new Error("Error Loading Review...");
         }
         return (
         <h1> Review {params.reviewId} for blog {params.blogId}</h1>
