@@ -2,6 +2,7 @@
 import "./style.css";
 import Link from "next/link"; // used to navigate between component 
 import { usePathname } from "next/navigation"; // used to decalre the active path name 
+import { useState } from "react";
 
 //navigation object for creating navigation menu of the following component
 const navLink = [
@@ -17,8 +18,13 @@ export default function AuthLayout({
 }){
     //creating path
     const pathname = usePathname();
+    const [input, setInput] = useState("");
     return (
         <div>
+            <div>
+                {/* this will be shared between compnent if you want separate the resource user template.tsx */}
+                <input value={input} onChange={e => setInput(e.target.value)} />
+            </div>
             {/* mapping through nav link object and adding the link.href for each item of the navLink object */}
             {navLink.map((link) => {const isActive = pathname.startsWith(link.href);
                 return (

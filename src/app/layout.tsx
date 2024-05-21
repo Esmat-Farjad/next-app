@@ -1,4 +1,6 @@
 import { Metadata } from "next"
+import Link from "next/link";
+import "./style.css";
 
 export const metadata: Metadata = {
   title: {
@@ -18,11 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header style={{backgroundColor:"gray",padding: "0.5rem"}}>
-          Navbar
+        <header className={"bg-slate-500 text-white p-5 mb-5"}>
+          <Link href="/">Navbar</Link>
         </header>
+        <div className={"container p-5 ml-5 mr-5"}>
         {children}
-        <footer style={{backgroundColor:"lightblue",padding: "0.5rem"}}>
+        </div>
+        <footer className={"bg-slate-100 text-teal-600 p-5 mt-5"}>
           Footer
         </footer>
       </body>
