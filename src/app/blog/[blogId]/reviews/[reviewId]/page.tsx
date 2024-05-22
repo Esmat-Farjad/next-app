@@ -1,3 +1,4 @@
+"use client" //declaring the component as client so the recovering from error work.
 import { notFound } from "next/navigation";
 
 function getRandomInt(count: number) {
@@ -12,7 +13,7 @@ export default function BlogReviews(
     }) {
         const random = getRandomInt(3);
         if(random === 2){
-            throw new Error("Error too much refresh...wait for a moment and Tray again...");
+            throw new Error("Error too much refresh...wait for a moment and ");
         }
         if(parseInt(params.reviewId) > 1000){
             notFound();
@@ -25,7 +26,6 @@ export default function BlogReviews(
                 <h1>For observing the error handling in Next.js Refresh the page multiple times.</h1>
                 <ol>
                     <li>If you refresh the page multiple times it gives an error</li>
-                   
                 </ol>
             </div>
             </>
