@@ -20,8 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header className={"bg-slate-500 text-white p-5 mb-5"}>
-          <Link href="/">Navbar</Link>
+        <header className={"mx-20 px-10 py-4"}>
+          <Link href="/" className={"font-bold text-2xl"}>Navbar</Link>
+          <ul className={"inline mx-5"}>
+            <li className={"inline mx-3"}><Link href="/">Home</Link></li>
+            <li className={"inline mx-3"}><Link href="/">Projects</Link></li>
+            <li className={"inline mx-3"}><Link href="/">Technologies</Link></li>
+          </ul>
         </header>
         <div className={"container p-5 ml-5 mr-5"}>
         {children}
