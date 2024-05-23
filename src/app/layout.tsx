@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={"bg-slate-900 text-white relative"}>
         <header className={"mx-20 px-10 py-4"}>
           <Link href="/" className={"font-bold text-2xl"}>Navbar</Link>
           <ul className={"inline mx-5"}>
@@ -31,8 +31,10 @@ export default function RootLayout({
         <div className={"container p-5 ml-5 mr-5"}>
         {children}
         </div>
-        <footer className={"bg-slate-100 text-teal-600 p-5 mt-5"}>
-          Footer
+        <footer className={"fixed bottom-0 p-5 mt-5"}>
+          <div className={"text-center p-3 "}>
+            <p className="text-xl"></p>
+          </div>
         </footer>
       </body>
     </html>
