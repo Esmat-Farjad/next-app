@@ -18,7 +18,6 @@ const navLink = [
   {name: "About", href:"/about"},
   {name: "Profile", href:"/profile"},
   {name: "Login", href: "/login"},
-  {name: "Sign Up", href: "/register"},
 ];
 
 export default function RootLayout({
@@ -29,7 +28,7 @@ export default function RootLayout({
   const pathname = usePathname();
   return (
     <html lang="en">
-      <body className={"bg-slate-900 text-white relative"}>
+      <body className={"bg-slate-900 bg-blend-darken text-white relative"}>
         <header className={"mx-20 px-10 py-4"}>
           <Link href="/" className={"font-bold text-2xl"}>Navbar</Link>
          
