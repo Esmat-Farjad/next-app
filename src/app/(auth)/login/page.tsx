@@ -11,10 +11,10 @@ export default function Login(){
             </div>
             <form action="#" className="my-5 flex flex-col items-center">
                 <label htmlFor="username" className="">username</label>
-                <input type="text" className="w-3/12 px-3 py-2 outline-none bg-inherit border rounded border-slate-500 focus:border-sky-500" />
+                <input type="text" className="form-input" />
                 <label htmlFor="password" className="">password</label>
-                <input type="text" className="w-3/12 px-3 py-2 outline-none bg-inherit border rounded border-slate-500 focus:border-sky-500" />
-                <button className="bg-transparent border border-slate-500 block p-3 rounded shadow text-inherit">Sign in</button>
+                <input type="text" className="form-input" />
+                <button className="btn-transparent">Sign in</button>
             </form>
         </div>
     </div>;
