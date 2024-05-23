@@ -10,10 +10,10 @@ export default function Login(){
                 <span>to continue to your account please sign in</span>
             </div>
             <form action="#" className="my-5 flex flex-col items-center">
-                <label htmlFor="username" className="">username</label>
-                <input type="text" className="form-input" />
-                <label htmlFor="password" className="">password</label>
-                <input type="text" className="form-input" />
+                {/* <label htmlFor="username" className="">username</label> */}
+                <input type="text" className="form-input" placeholder="username" />
+                {/* <label htmlFor="password" className="">password</label> */}
+                <input type="text" className="form-input" placeholder="password" />
                 <button className="btn-transparent">Sign in</button>
             </form>
         </div>

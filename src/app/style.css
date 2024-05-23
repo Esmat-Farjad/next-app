@@ -9,6 +9,6 @@
 }
 @layer components{
 .form-input{
-        @apply w-3/12 px-3 py-2 outline-none bg-inherit border rounded border-slate-500 focus:border-sky-500;
+        @apply w-3/12 px-3 py-2 outline-none bg-inherit border rounded border-slate-500 focus:border-sky-500 my-3;
     }
 }
