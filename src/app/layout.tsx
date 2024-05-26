@@ -31,7 +31,6 @@ export default function RootLayout({
       <body className={"bg-slate-900 bg-blend-darken text-white relative"}>
         <header className={"mx-20 px-10 py-4"}>
           <Link href="/" className={"font-bold text-2xl"}>Navbar</Link>
-         
             {navLink.map((link) => {const isActive = pathname.startsWith(link.href);
               return (
                 <Link 
@@ -43,7 +42,7 @@ export default function RootLayout({
               );
             })}
         </header>
-        <div className={"container p-5 ml-5 mr-5"}>
+        <div>
         {children}
         </div>
         <footer className={"fixed bottom-0 p-5 mx-10 mt-5"}>
