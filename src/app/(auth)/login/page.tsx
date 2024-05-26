@@ -9,7 +9,18 @@ export default function Login(){
     }
     return <div className="">
         <div className="mt-20">
-            <div className="alert alert-danger"></div>
+            <div className="grid justify-items-center">
+                <div className="text-rose-700 bg-rose-200 rounded-md p-5 w-1/3">
+                    <span className="text-lg animate-spin"></span>
+                    <strong>attention</strong>
+                    <small>
+                    <ul className="px-3 list-disc">
+                        <li>Invalid username or password</li>
+                        <li>Please enter a valid username and password</li>
+                    </ul>
+                    </small>
+                </div>
+            </div>
             <div className="text-center py-5">
                 <h1 className="text-2xl font-bold">Sign In</h1>
                 <span>to continue to your account please sign in</span>
