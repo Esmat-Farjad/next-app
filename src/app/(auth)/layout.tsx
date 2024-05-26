@@ -20,10 +20,10 @@ export default function AuthLayout({
     const pathname = usePathname();
     const [input, setInput] = useState("");
     return (
-        <div>
+        <div className="mt-0">
             <div>
                 {/* this will be shared between compnent if you want separate the resource user template.tsx */}
-                <input value={input} onChange={e => setInput(e.target.value)} />
+                {/* <input value={input} onChange={e => setInput(e.target.value)} /> */}
             </div>
             {/* mapping through nav link object and adding the link.href for each item of the navLink object */}
             {navLink.map((link) => {const isActive = pathname.startsWith(link.href);
