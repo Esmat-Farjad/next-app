@@ -3,20 +3,19 @@
 
 ## Prerequisites
 
-You will need [Node.js](https://nodejs.org) version 8.0 or greater installed on your system.
-
-## Setup
+You will need [Node.js](https://nodejs.org) the latest version installed on your system.
 
 Get the code by either cloning this repository using git
 
 ```
-git clone 
+git clone https://github.com/Esmat-Farjad/next-app.git
 ```
-
-
 ## Getting Started
-
-First, run the development server:
+### install dependancies
+```
+npm install
+```
+run the development server:
 
 ```bash
 npm run dev
