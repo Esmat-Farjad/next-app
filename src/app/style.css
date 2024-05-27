@@ -6,10 +6,12 @@
 .btn-transparent{
     @apply border border-slate-500 block px-5 py-2 rounded shadow text-inherit my-10;
 }
+.btn-transparent:hover{
+    @apply bg-cyan-500 duration-500 border-none shadow;
+}
 }
 @layer components{
 .form-input{
-        @apply  px-3 py-3 outline-none bg-inherit border rounded border-slate-500 focus:border-sky-500 my-4;
+        @apply  px-3 py-3 outline-none bg-inherit border rounded border-slate-500 focus:border-sky-500;
     }
 }
-
