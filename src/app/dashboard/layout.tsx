@@ -3,15 +3,18 @@ export default function DashboardLayout(
         children,
         users,
         revenue,
-        notifications
+        notifications,
+        login,
     }:{
         children: React.ReactNode;
         users: React.ReactNode;
         revenue: React.ReactNode;
         notifications: React.ReactNode;
+        login: React.ReactNode;
     }
 ){
-    return (
+    const isLoggedIn = false;
+    return isLoggedIn ?(
         <div>
         <div>{children}</div>
         <div style={{display:"flex"}}>
@@ -22,6 +25,9 @@ export default function DashboardLayout(
             <div style={{display: "flex", flex: 1}}>{notifications}</div>
         </div>
         </div>
+
+    ) : (login);
+}
         /*---------------Note---------------
 Parallel Routes:
 1. Parallel routes in Next.js are defined using a feature known as slots
@@ -48,5 +54,3 @@ b) Sub-navigaiton
     This is especially in a complex application such as our dashboard where different section
     serve distict purposes.
 */
-    );
-}

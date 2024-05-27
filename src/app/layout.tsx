@@ -4,6 +4,7 @@ import Link from "next/link";
 import "./style.css";
 import { usePathname } from "next/navigation";
 
+
 // export const metadata: Metadata = {
 //   title: {
 //     absolute: "",
@@ -51,6 +52,7 @@ export default function RootLayout({
           </div>
         </footer>
       </body>
+      
     </html>
   )
 }
