@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { FaCircleCheck } from "react-icons/fa6";
 import { IoCloseCircle } from "react-icons/io5";
-
+import { IoClose } from "react-icons/io5";
 
 export const metadata = {
     title: "Auth",
@@ -23,11 +23,13 @@ export default function Login(){
             </div>
             <div className="grid justify-items-center" id="alert-box">
                 <div className="text-rose-700 bg-rose-200 shadow rounded-md p-4 w-1/3">
-                    <span className="text-lg animate-spin"></span>
-                   <IoCloseCircle className="text-xl inline mx-2"/>
+                    <p className="relative">
+                    <IoCloseCircle className="text-xl inline mx-2"/>
                     <small>
                         Invalid username or password
                     </small>
+                    <span className="absolute top-50 right-0 cursor-pointer hover:opacity-75"><IoClose/></span>
+                    </p>
                 </div>
             </div>
             <div className="text-center py-5">
