@@ -4,6 +4,7 @@ import Link from "next/link"; // used to navigate between component
 import { usePathname } from "next/navigation"; // used to decalre the active path name 
 import { useState } from "react";
 
+
 //navigation object for creating navigation menu of the following component
 const navLink = [
     {name: "Register", href:"/register"},
