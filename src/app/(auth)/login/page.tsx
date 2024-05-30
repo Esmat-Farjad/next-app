@@ -14,11 +14,13 @@ export default function Login(){
         <div className="mt-20">
             <div className="grid justify-items-center" id="alert-box">
                 <div className="text-emerald-700 bg-emerald-200 shadow rounded-md p-4 w-1/3">
-                    <span className="text-lg animate-spin"></span>
+                   <p className="relative">
                    <FaCircleCheck className="text-xl inline mx-2"/>
                     <small>
                         Invalid username or password
                     </small>
+                    <span className="absolute top-50 right-0 cursor-pointer hover:opacity-75"><IoClose/></span>
+                   </p>
                 </div>
             </div>
             <div className="grid justify-items-center" id="alert-box">
@@ -37,9 +39,12 @@ export default function Login(){
                 <span>to continue to your account please sign in</span>
             </div>
             <form action="#" className="my-10 login-form flex flex-col justify-center items-center">
-                {/* <label htmlFor="username" className="">username</label> */}
-                <input type="text" className="md:w-100 sm:w-100 lg:w-3/12 form-input" placeholder="username..."/>
-                <input type="password" className="form-input md:w-100 sm:w-100 lg:w-3/12" placeholder="password" />
+                <div className=" grid w-1/4">
+                    <label htmlFor="username" className="">username</label>
+                    <input type="text" className=" form-input" placeholder="username"/>
+                    <label htmlFor="password" className=" mt-3">username</label>
+                    <input type="password" className="form-input" placeholder="password" />
+                </div>
                 <button className="btn-transparent">Sign in</button>
                 <div className="mt-5">
                     <p>please accept 
