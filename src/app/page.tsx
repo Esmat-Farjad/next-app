@@ -41,12 +41,58 @@ export default function Home(){
                     <p className="text-pink-600">Join me on social media</p>
                     <p className="py-3 pr-3">
                         <Link href="/www.facebook.com"><FaFacebookF className="social-icon"/></Link>
-                        <Link href="/www.github.com/Esmat-Farjad"><FaGithub className="social-icon"/></Link>
+                        <Link href="http://www.github.com/Esmat-Farjad"><FaGithub className="social-icon"/></Link>
                         <Link href="/www.instagram.com"><FaInstagram className="social-icon"/></Link>
                         <Link href="/www.gmail.com"><BiLogoGmail className="social-icon"/></Link>
                         <Link href="/www.twitter.com"><FaTwitter className="social-icon"/></Link>
                     </p>
                 </div>
+            </div>
+        </div>
+        {/* project section */}
+        <div className="project-section">
+            <div className="text-2xl text-center">
+                <span className="text-4xl p-3 font-bold">Projects Completed</span>
+                <p className="pt-2">this projects are completed or under development</p>
+            </div>
+            <div className="grid grid-cols-5 p-10 gap-5 mx-20">
+                <div className="grid-cols-1 border rounded overflow-hidden">
+                    <Image src="/project.avif" alt="photo" width={300} height={280}></Image>
+                    <p className="text-center p-5">
+                        <p className="font-bold">Project tile</p>
+                        <p className="text-sm">project description</p>
+                    </p>
+                </div>
+                <div className="grid-cols-1 border rounded overflow-hidden shadow">
+                    <Image src="/project.avif" alt="photo" width={300} height={280}></Image>
+                    <p className="text-center p-5">
+                        <p className="font-bold">Project tile</p>
+                        <p className="text-sm">project description</p>
+                    </p>
+                </div>
+                <div className="grid-cols-1 border rounded overflow-hidden shadow">
+                    <Image src="/project.avif" alt="photo" width={300} height={280}></Image>
+                    <p className="text-center p-5">
+                        <p className="font-bold">Project tile</p>
+                        <p className="text-sm">project description</p>
+                    </p>
+                </div>
+                <div className="grid-cols-1 border rounded overflow-hidden shadow">
+                <Image src="/project.avif" alt="photo" width={300} height={280}></Image>
+                    <p className="text-center p-5">
+                        <p className="font-bold">Project tile</p>
+                        <p className="text-sm">project description</p>
+                    </p>
+                </div>
+                <div className="grid-cols-1 border rounded overflow-hidden shadow">
+                    <Image src="/project.avif" alt="photo" width={300} height={280}></Image>
+                    <p className="text-center p-5">
+                        <p className="font-bold">Project tile</p>
+                        <p className="text-sm">project description</p>
+                    </p>
+                </div>
+                
+                
             </div>
         </div>
     </div>
