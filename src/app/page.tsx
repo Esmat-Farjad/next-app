@@ -1,5 +1,12 @@
 import Image from "next/image";
-import Link from "next/link"
+import Link from "next/link";
+// icons
+import { FaFacebookF } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { BiLogoGmail } from "react-icons/bi";
+import { FaTwitter } from "react-icons/fa";
+
 export default function Home(){
     const blogId = 100
    
@@ -33,11 +40,11 @@ export default function Home(){
                     </p>
                     <p className="text-pink-600">Join me on social media</p>
                     <p className="py-3 pr-3">
-                        <span className="social-icon mx-1"><Link href="/www.facebook.com">facebook</Link></span>
-                        <span className="social-icon mx-1"><Link href="/www.facebook.com">GitHub</Link></span>
-                        <span className="social-icon mx-1"><Link href="/www.facebook.com">Gmail</Link></span>
-                        <span className="social-icon mx-1"><Link href="/www.facebook.com">Instagram</Link></span>
-                        <span className="social-icon mx-1"><Link href="/www.facebook.com">Twitter</Link></span>
+                        <Link href="/www.facebook.com"><FaFacebookF className="social-icon"/></Link>
+                        <Link href="/www.github.com/Esmat-Farjad"><FaGithub className="social-icon"/></Link>
+                        <Link href="/www.instagram.com"><FaInstagram className="social-icon"/></Link>
+                        <Link href="/www.gmail.com"><BiLogoGmail className="social-icon"/></Link>
+                        <Link href="/www.twitter.com"><FaTwitter className="social-icon"/></Link>
                     </p>
                 </div>
             </div>
