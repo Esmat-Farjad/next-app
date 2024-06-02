@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link"
 export default function Home(){
     const blogId = 100
    
@@ -31,12 +32,14 @@ export default function Home(){
                     of Letraset sheets containing Lorem Ipsum passages, and more recently with 
                     desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </p>
+                    <p className="text-pink-600">Join me on social media</p>
                     <p className="p-3">
-                        <span className="">facebook</span>
-                        <span className="">github</span>
-                        <span className="">twitter</span>
-                        <span className="">Instagram</span>
-                        <span className="">Email</span>
+                        <span className="social-icon mx-1"><Link href="/www.facebook.com">facebook</Link></span>
+                        <span className="social-icon mx-1"><Link href="/www.facebook.com">GitHub</Link></span>
+                        <span className="social-icon mx-1"><Link href="/www.facebook.com">Gmail</Link></span>
+                        <span className="social-icon mx-1"><Link href="/www.facebook.com">Instagram</Link></span>
+                        <span className="social-icon mx-1"><Link href="/www.facebook.com">Twitter</Link></span>
+                       
                     </p>
                 </div>
             </div>

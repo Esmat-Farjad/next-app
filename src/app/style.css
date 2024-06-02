@@ -15,6 +15,11 @@
         @apply  px-3 py-3 outline-none bg-inherit border rounded border-slate-500 focus:border-sky-500;
     }
 }
+@layer components{
+    .social-icon{
+        @apply cursor-pointer px-4 py-2 text-xl bg-teal-700 text-white  hover:bg-pink-700 duration-500;
+    }
+}
 .eye-icon{
     position: absolute;
     top: 37.8%;
