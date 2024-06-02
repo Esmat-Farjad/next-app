@@ -8,9 +8,7 @@ export default function Home(){
             {/* <Image src='next.svg' alt="this is the picture" width={100} height={100}/> */}
            <p className="text-white text-6xl font-bold text-center mt-10 pt-10">Welcome to my Portfolio</p>
            <div className="text-center">this is the subtext comes from the bottom of the page</div>
-           <div className="flex justify-center items-center">
-           <Image src="vercel.svg" className="p-5" alt="logo" width={500} height={500}></Image>
-           </div>
+           
         </div>
         <div className="grid grid-cols-5 p-10 gap-5 mx-20">
             <div className="card grid-col-1 image-container">
@@ -21,6 +19,7 @@ export default function Home(){
             <div className="col-span-4 info-container">
                 <div className="mr-5">
                     <p className="text-4xl font-bold">Esmatullah Hashimi</p>
+                    <p className="tex-lg text-teal-500 mb-5">Full Stack Software developer</p>
                     <p className="">
                     Lorem Ipsum is simply dummy text of the printing and 
                     typesetting industry. Lorem Ipsum has been the 
