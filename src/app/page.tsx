@@ -11,6 +11,36 @@ export default function Home(){
            <Image src="vercel.svg" className="p-5" alt="logo" width={500} height={500}></Image>
            </div>
         </div>
+        <div className="grid grid-cols-5 p-10 gap-5 mx-20">
+            <div className="card grid-col-1">
+                <div className="border border-gray-500 rounded overflow-hidden shadow">
+                    <Image src="/profile.jpg" alt="profile" width={500} height={700}></Image>
+                </div>
+            </div>
+            <div className="col-span-4">
+                <div className="mr-5">
+                    <p className="text-4xl font-bold">Esmatullah Hashimi</p>
+                    <p className="">
+                    Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the 
+                    industrys standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled 
+                    it to make a type specimen book. It has survived not only five 
+                    centuries, but also the leap into electronic typesetting, remaining 
+                    essentially unchanged. It was popularised in the 1960s with the release 
+                    of Letraset sheets containing Lorem Ipsum passages, and more recently with 
+                    desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <p className="p-3">
+                        <span className="">facebook</span>
+                        <span className="">github</span>
+                        <span className="">twitter</span>
+                        <span className="">Instagram</span>
+                        <span className="">Email</span>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
         
 
