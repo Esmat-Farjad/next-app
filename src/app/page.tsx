@@ -13,12 +13,12 @@ export default function Home(){
            </div>
         </div>
         <div className="grid grid-cols-5 p-10 gap-5 mx-20">
-            <div className="card grid-col-1">
+            <div className="card grid-col-1 image-container">
                 <div className="border border-gray-500 rounded overflow-hidden shadow">
                     <Image src="/profile.jpg" alt="profile" width={500} height={700}></Image>
                 </div>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-4 info-container">
                 <div className="mr-5">
                     <p className="text-4xl font-bold">Esmatullah Hashimi</p>
                     <p className="">
@@ -33,13 +33,12 @@ export default function Home(){
                     desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </p>
                     <p className="text-pink-600">Join me on social media</p>
-                    <p className="p-3">
+                    <p className="py-3 pr-3">
                         <span className="social-icon mx-1"><Link href="/www.facebook.com">facebook</Link></span>
                         <span className="social-icon mx-1"><Link href="/www.facebook.com">GitHub</Link></span>
                         <span className="social-icon mx-1"><Link href="/www.facebook.com">Gmail</Link></span>
                         <span className="social-icon mx-1"><Link href="/www.facebook.com">Instagram</Link></span>
                         <span className="social-icon mx-1"><Link href="/www.facebook.com">Twitter</Link></span>
-                       
                     </p>
                 </div>
             </div>

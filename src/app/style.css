@@ -51,3 +51,19 @@
         opacity: 1;
     }
 }
+@keyframes slideRight {
+    from {
+        transform: translateX(360px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.image-container{
+    animation: slideLeft 1.3s ease-in-out 1;
+}
+.info-container{
+    animation: slideRight 1.3s ease-in-out 1;
+}
