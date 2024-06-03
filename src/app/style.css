@@ -61,9 +61,39 @@
         opacity: 1;
     }
 }
+@keyframes wipe-enter{
+    0%{
+        transform: scale(0, .025);
+    }
+    50%{
+        transform: scale(1, .025);
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+    .grid-cols-1 {
+      animation-name: wipe-enter;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+    }
+  }
+.skills-section .progress-bar .bar{
+    animation: grow 2s ease 1;
+}
+@keyframes grow {
+    from {
+        height: 0%;
+    }
+    to {
+        height: 100%;
+       
+    }
+}
 .image-container{
     animation: slideLeft 1.3s ease-in-out 1;
 }
 .info-container{
     animation: slideRight 1.3s ease-in-out 1;
 }
+
+    
+  

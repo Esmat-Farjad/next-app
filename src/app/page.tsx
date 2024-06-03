@@ -91,11 +91,19 @@ export default function Home(){
                         <p className="text-sm">project description</p>
                     </p>
                 </div>
-                
-                
             </div>
         </div>
-    </div>
-        
+        <div className="p-10 gap-5 mx-20">
+            <div className="text-center">
+                <p className="text-4xl font-bold">Skills & Experties</p>
+            </div>
+            <div className="grid grid-cols-6">
+                <div className="grid-cols-1 skill-holder border rounded flex flex-col justify-center items-center">
+                    <p className="font-bold">[skill name]</p>
+                    <progress className="w-24 h-2 bg-blue-500"></progress>
+                </div>
+            </div>
+        </div>
+</div> 
 
 }
