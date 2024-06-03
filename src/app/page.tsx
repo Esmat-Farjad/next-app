@@ -6,6 +6,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaTwitter } from "react-icons/fa";
+import { RxOpenInNewWindow } from "react-icons/rx";
 
 export default function Home(){
     const blogId = 100
@@ -66,6 +67,12 @@ export default function Home(){
                         <p className="font-bold">Project tile</p>
                         <p className="text-sm">project description</p>
                     </p>
+                    <div className="absolute-cover gradient-BG">
+                        <Link href="/profile" className="text-2xl p-3 text-white rounded-full bg-purple-500 border shadow-purple-300 z-50">
+                            <RxOpenInNewWindow/>
+                        </Link>
+                        
+                    </div>
                 </div>
                 <div className="grid-cols-1 border rounded overflow-hidden shadow">
                     <Image src="/project.avif" alt="photo" width={300} height={280}></Image>
