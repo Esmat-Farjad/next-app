@@ -9,6 +9,10 @@ import { FaTwitter } from "react-icons/fa";
 
 export default function Home(){
     const blogId = 100
+    const carouselData = [
+        {src: "/next.svg", alt:"skill", width:500, height:400},
+        {src: "/vercel.svg",alt:"skill", width:500, height:400},
+    ]
    
     return <div>
         <div className="heading-container p-10 bg-white h-96 bg-gradient-to-b from-indigo-900 to-pink-800">
@@ -52,7 +56,7 @@ export default function Home(){
         {/* project section */}
         <div className="project-section">
             <div className="text-2xl text-center">
-                <span className="text-4xl p-3 font-bold">Projects Completed</span>
+                <span className="text-4xl p-3 font-bold">Latest Project</span>
                 <p className="pt-2">this projects are completed or under development</p>
             </div>
             <div className="grid grid-cols-5 p-10 gap-5 mx-20">
@@ -93,14 +97,49 @@ export default function Home(){
                 </div>
             </div>
         </div>
-        <div className="p-10 gap-5 mx-20">
+        <div className="p-10 gap-5 mx-20 my-10">
             <div className="text-center">
                 <p className="text-4xl font-bold">Skills & Experties</p>
             </div>
-            <div className="grid grid-cols-6">
-                <div className="grid-cols-1 skill-holder border rounded flex flex-col justify-center items-center">
-                    <p className="font-bold">[skill name]</p>
-                    <progress className="w-24 h-2 bg-blue-500"></progress>
+            <div className="grid grid-cols-4 place-content-center gap-5 my-5">
+                <div className="skills">
+                    <div className="flex justify-between mb-1">
+                    <span className="text-base font-medium text-blue-700 dark:text-white">Python</span>
+                    <span className="text-sm font-medium text-blue-700 dark:text-white">67%</span>
+                    </div>
+                    <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                    <div className="bg-blue-600 h-2.5 rounded-full progress-bar"></div>
+                    </div>
+                </div>
+
+                <div className="skills">
+                    <div className="flex justify-between mb-1">
+                    <span className="text-base font-medium text-blue-700 dark:text-white">Javascript</span>
+                    <span className="text-sm font-medium text-blue-700 dark:text-white">67%</span>
+                    </div>
+                    <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                    <div className="bg-blue-600 h-2.5 rounded-full progress-bar"></div>
+                    </div>
+                </div>
+
+                <div className="skills">
+                    <div className="flex justify-between mb-1">
+                    <span className="text-base font-medium text-blue-700 dark:text-white">Next Js</span>
+                    <span className="text-sm font-medium text-blue-700 dark:text-white">67%</span>
+                    </div>
+                    <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                    <div className="bg-blue-600 h-2.5 rounded-full progress-bar"></div>
+                    </div>
+                </div>
+
+                <div className="skills">
+                    <div className="flex justify-between mb-1">
+                    <span className="text-base font-medium text-blue-700 dark:text-white">React Js</span>
+                    <span className="text-sm font-medium text-blue-700 dark:text-white">67%</span>
+                    </div>
+                    <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                    <div className="bg-blue-600 h-2.5 rounded-full progress-bar"></div>
+                    </div>
                 </div>
             </div>
         </div>
