@@ -20,6 +20,11 @@
         @apply inline mx-2 hover:text-pink-500 duration-1000 text-2xl;
     }
 }
+@layer components{
+    .gradient-BG{
+        @apply bg-cyan-800 flex justify-center items-center;
+    }
+}
 .eye-icon{
     position: absolute;
     top: 37.8%;
@@ -70,6 +75,7 @@
     }
 }
 .grid-cols-1{
+    position: relative;
     animation: fadeUp 2s ease-in-out 1;
 }
 .image-container{
@@ -82,7 +88,18 @@
     width: 67%;
     animation: grow 2s ease-in-out 1;
 }
-    
+.grid-cols-1 .absolute-cover{
+    position: absolute;
+    top: 110%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+}
+.grid-cols-1:hover .absolute-cover{
+    top: 0%;
+    transition: all 0.5s ease-in-out;
+}
+
 @keyframes grow {
     from {
         width: 0%;
