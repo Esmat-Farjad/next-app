@@ -73,6 +73,12 @@
         opacity: 1;
     }
 }
+.contact-holder1{
+    animation: slideRight 1.5s ease-in-out 1;
+}
+.contact-holder2{
+    animation: slideLeft 1.5s ease-in-out 1;
+}
 .grid-cols-1{
     position: relative;
     animation: fadeUp 2s ease-in-out 1;

@@ -186,9 +186,9 @@ export default function Home(){
                 <p className="text-4xl font-bold">Contact me</p>
                 <span className="">feel free to contact me</span>
             </div>
-            <div className="grid grid-cols-2">
-                <div className="border rounded shadow-xl shadow-cyan-500 p-5">
-                    <p className="text-center text-2xl">Contact Information</p>
+            <div className="grid grid-cols-2 gap-5 mt-10">
+                <div className="border border-cyan-500 rounded shadow-xl shadow-cyan-500 p-5 contact-holder2">
+                    <p className="text-center text-2xl pt-10">Contact Information</p>
                     <ul className="my-5">
                         <li className="p-4">
                             <BiLogoGmail className="inline text-2xl"/> 
@@ -204,8 +204,8 @@ export default function Home(){
                         </li>
                     </ul>
                 </div>
-                <div className="border rounded shadow-xl shadow-cyan-500 p-5">
-                    <p className="text-center text-2xl">Query</p>
+                <div className="border border-cyan-500 rounded shadow-xl shadow-cyan-500 p-5 contact-holder1">
+                    <p className="text-center text-2xl pt-10">Query</p>
                     <form action="#" className="flex flex-col mx-10">
                         <label htmlFor="fullname">Full Name</label>
                         <input type="text" className="form-input" id="fullname"/>
