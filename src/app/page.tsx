@@ -139,7 +139,7 @@ export default function Home(){
             <div className="text-center">
                 <p className="text-4xl font-bold">Skills & Experties</p>
             </div>
-            <div className="grid grid-cols-4 place-content-center gap-5 my-5">
+            <div className="grid xl:grid-cols-4 sm:grid-cols-1 md:grid-cols-1 place-content-center gap-5 my-5">
                 <div className="skills">
                     <div className="flex justify-between mb-1">
                     <span className="text-base font-medium text-blue-700 dark:text-white">Python</span>
@@ -187,7 +187,7 @@ export default function Home(){
                 <p className="text-4xl font-bold">Contact me</p>
                 <span className="">feel free to contact me</span>
             </div>
-            <div className="grid grid-cols-2 gap-5 mt-10">
+            <div className="grid xl:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 gap-5 mt-10">
                 <div className="border border-cyan-500 rounded shadow-xl shadow-cyan-500 p-5 contact-holder2">
                     <p className="text-center text-2xl pt-10">Contact Information</p>
                     <ul className="my-5">
