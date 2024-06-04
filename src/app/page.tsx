@@ -61,8 +61,8 @@ export default function Home(){
                 <span className="text-4xl p-3 font-bold">Latest Project</span>
                 <p className="pt-2">this projects are completed or under development</p>
             </div>
-            <div className="grid grid-cols-5 p-10 gap-5 mx-20">
-                <div className="grid-cols-1 shadow-effect rounded overflow-hidden">
+            <div className="grid xl:grid-cols-5 sm:grid-cols-1 md:grid-cols-1 p-10 gap-5 xl:mx-20 sm:mx-10 md:mx-10">
+                <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 shadow-effect rounded overflow-hidden card">
                     <div className="blur-cover">
                         <Image src="/project.avif" alt="photo" width={350} height={280}></Image>
                         <p className="text-center p-5">
@@ -76,7 +76,7 @@ export default function Home(){
                         </Link>
                     </div>
                 </div>
-                <div className="grid-cols-1 shadow-effect rounded overflow-hidden">
+                <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 shadow-effect rounded overflow-hidden card">
                     <div className="blur-cover">
                         <Image src="/project.avif" alt="photo" width={350} height={280}></Image>
                         <p className="text-center p-5">
@@ -90,7 +90,7 @@ export default function Home(){
                         </Link>
                     </div>
                 </div>
-                <div className="grid-cols-1 shadow-effect rounded overflow-hidden">
+                <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 shadow-effect rounded overflow-hidden card">
                     <div className="blur-cover">
                         <Image src="/project.avif" alt="photo" width={350} height={280}></Image>
                         <p className="text-center p-5">
@@ -104,7 +104,7 @@ export default function Home(){
                         </Link>
                     </div>
                 </div>
-                <div className="grid-cols-1 shadow-effect rounded overflow-hidden">
+                <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 shadow-effect rounded overflow-hidden card">
                     <div className="blur-cover">
                         <Image src="/project.avif" alt="photo" width={350} height={280}></Image>
                         <p className="text-center p-5">
@@ -118,9 +118,10 @@ export default function Home(){
                         </Link>
                     </div>
                 </div>
-                <div className="grid-cols-1 shadow-effect rounded overflow-hidden">
+                <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 shadow-effect rounded overflow-hidden card">
                     <div className="blur-cover">
-                        <Image src="/project.avif" alt="photo" width={350} height={280}></Image>
+                    <Image src="/project.avif" alt="photo" objectFit="cover" width={350} height={280}></Image>
+                   
                         <p className="text-center p-5">
                             <p className="font-bold">Project tile</p>
                             <p className="text-sm">project description</p>

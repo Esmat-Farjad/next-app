@@ -97,21 +97,20 @@
     width: 67%;
     animation: grow 2s ease-in-out 1;
 }
-.grid-cols-1 .absolute-cover{
+.card .absolute-cover{
     position: absolute;
     top: 110%;
     left: 0%;
     right: 0%;
     bottom: 0%;
 }
-.grid-cols-1:hover .absolute-cover{
+.card:hover .absolute-cover{
     top: 0%;
     transition: all 0.5s ease-in-out;
 }
-.grid-cols-1:hover .blur-cover{
+.card:hover .blur-cover{
     filter: blur(5px);
 }
-
 @keyframes grow {
     from {
         width: 0%;
