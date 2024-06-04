@@ -7,7 +7,8 @@ import { FaInstagram } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaTwitter } from "react-icons/fa";
 import { RxOpenInNewWindow } from "react-icons/rx";
-
+import { CgPhone } from "react-icons/cg";
+import { FaLocationCrosshairs } from "react-icons/fa6";
 export default function Home(){
     const blogId = 100
     const carouselData = [
@@ -176,6 +177,45 @@ export default function Home(){
                     <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                     <div className="bg-blue-600 h-2.5 rounded-full progress-bar"></div>
                     </div>
+                </div>
+            </div>
+        </div>
+        {/* contact me */}
+        <div className="contact-section p-10 gap-5 mx-20 my-10">
+            <div className="heading text-center">
+                <p className="text-4xl font-bold">Contact me</p>
+                <span className="">feel free to contact me</span>
+            </div>
+            <div className="grid grid-cols-2">
+                <div className="border rounded shadow-xl shadow-cyan-500 p-5">
+                    <p className="text-center text-2xl">Contact Information</p>
+                    <ul className="my-5">
+                        <li className="p-4">
+                            <BiLogoGmail className="inline text-2xl"/> 
+                            <span className="mx-2">esmatullah@gmail.com</span>
+                        </li>
+                        <li className="p-4">
+                            <CgPhone className="inline text-2xl"/>
+                            <span className="mx-2">+93 (0) 74 862 1879</span>
+                        </li>
+                        <li className="p-4">
+                            <FaLocationCrosshairs className="text-2xl inline"/>
+                            <span className="mx-2">House No.12, Imam Reza path, Shaheed Mazari Road, Kabul, Afghanistn</span>
+                        </li>
+                    </ul>
+                </div>
+                <div className="border rounded shadow-xl shadow-cyan-500 p-5">
+                    <p className="text-center text-2xl">Query</p>
+                    <form action="#" className="flex flex-col mx-10">
+                        <label htmlFor="fullname">Full Name</label>
+                        <input type="text" className="form-input" id="fullname"/>
+                        <label htmlFor="email">Email</label>
+                        <input type="email" className="form-input" id="email"/>
+                        
+                        <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+                        <textarea id="message" rows={4} className="form-input" placeholder="Write your thoughts here..."></textarea>
+                        <button type="submit" className="btn-transparent my-10 w-24">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
