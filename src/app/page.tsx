@@ -23,13 +23,13 @@ export default function Home(){
            <div className="text-center">this is the subtext comes from the bottom of the page</div>
            
         </div>
-        <div className="grid grid-cols-5 p-10 gap-5 mx-20">
+        <div className="grid xl:grid-cols-5 md:grid-cols-1 sm:grid-cols-1 p-10 gap-5 xl:mx-20 md:mx-10 sm:mx-10">
             <div className="card grid-col-1 image-container shadow-effect">
                 <div className="border border-gray-500 rounded overflow-hidden shadow">
-                    <Image src="/profile.jpg" alt="profile" width={500} height={700}></Image>
+                    <Image src="/profile.jpg" alt="profile" width={550} height={700}></Image>
                 </div>
             </div>
-            <div className="col-span-4 info-container shadow-effect p-5 rounded">
+            <div className="xl:col-span-4 sm:grid-cols-1 info-container shadow-effect p-5 rounded">
                 <div className="mr-5">
                     <p className="text-4xl font-bold">Esmatullah Hashimi</p>
                     <p className="tex-lg text-teal-500 mb-5">Full Stack Software developer</p>
