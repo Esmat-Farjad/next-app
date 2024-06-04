@@ -24,12 +24,12 @@ export default function Home(){
            
         </div>
         <div className="grid grid-cols-5 p-10 gap-5 mx-20">
-            <div className="card grid-col-1 image-container">
+            <div className="card grid-col-1 image-container shadow-effect">
                 <div className="border border-gray-500 rounded overflow-hidden shadow">
                     <Image src="/profile.jpg" alt="profile" width={500} height={700}></Image>
                 </div>
             </div>
-            <div className="col-span-4 info-container">
+            <div className="col-span-4 info-container shadow-effect p-5 rounded">
                 <div className="mr-5">
                     <p className="text-4xl font-bold">Esmatullah Hashimi</p>
                     <p className="tex-lg text-teal-500 mb-5">Full Stack Software developer</p>
@@ -62,7 +62,7 @@ export default function Home(){
                 <p className="pt-2">this projects are completed or under development</p>
             </div>
             <div className="grid grid-cols-5 p-10 gap-5 mx-20">
-                <div className="grid-cols-1 border border-cyan-500 shadow-2xl shadow-cyan-500 rounded overflow-hidden">
+                <div className="grid-cols-1 shadow-effect rounded overflow-hidden">
                     <div className="blur-cover">
                         <Image src="/project.avif" alt="photo" width={350} height={280}></Image>
                         <p className="text-center p-5">
@@ -76,7 +76,7 @@ export default function Home(){
                         </Link>
                     </div>
                 </div>
-                <div className="grid-cols-1 border border-cyan-500 shadow-2xl shadow-cyan-500 rounded overflow-hidden">
+                <div className="grid-cols-1 shadow-effect rounded overflow-hidden">
                     <div className="blur-cover">
                         <Image src="/project.avif" alt="photo" width={350} height={280}></Image>
                         <p className="text-center p-5">
@@ -90,7 +90,7 @@ export default function Home(){
                         </Link>
                     </div>
                 </div>
-                <div className="grid-cols-1 border border-cyan-500 shadow-2xl shadow-cyan-500 rounded overflow-hidden">
+                <div className="grid-cols-1 shadow-effect rounded overflow-hidden">
                     <div className="blur-cover">
                         <Image src="/project.avif" alt="photo" width={350} height={280}></Image>
                         <p className="text-center p-5">
@@ -104,7 +104,7 @@ export default function Home(){
                         </Link>
                     </div>
                 </div>
-                <div className="grid-cols-1 border border-cyan-500 shadow-2xl shadow-cyan-500 rounded overflow-hidden">
+                <div className="grid-cols-1 shadow-effect rounded overflow-hidden">
                     <div className="blur-cover">
                         <Image src="/project.avif" alt="photo" width={350} height={280}></Image>
                         <p className="text-center p-5">
@@ -118,7 +118,7 @@ export default function Home(){
                         </Link>
                     </div>
                 </div>
-                <div className="grid-cols-1 border border-cyan-500 shadow-2xl shadow-cyan-500 rounded overflow-hidden">
+                <div className="grid-cols-1 shadow-effect rounded overflow-hidden">
                     <div className="blur-cover">
                         <Image src="/project.avif" alt="photo" width={350} height={280}></Image>
                         <p className="text-center p-5">
@@ -204,7 +204,7 @@ export default function Home(){
                         </li>
                     </ul>
                 </div>
-                <div className="border border-cyan-500 rounded shadow-xl shadow-cyan-500 p-5 contact-holder1">
+                <div className="rounded p-5 shadow-effect contact-holder1">
                     <p className="text-center text-2xl pt-10">Query</p>
                     <form action="#" className="flex flex-col mx-10">
                         <label htmlFor="fullname">Full Name</label>

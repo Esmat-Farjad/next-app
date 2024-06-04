@@ -23,7 +23,11 @@
         @apply blur-3xl flex justify-center items-center;
     }
 }
-
+@layer components{
+    .shadow-effect{
+        @apply border border-cyan-500 shadow-xl shadow-cyan-500;
+    }
+}
 .eye-icon{
     position: absolute;
     top: 37.8%;
