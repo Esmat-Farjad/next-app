@@ -22,7 +22,7 @@
 }
 @layer components{
     .gradient-BG{
-        @apply bg-cyan-800 flex justify-center items-center;
+        @apply blur-3xl flex justify-center items-center;
     }
 }
 .eye-icon{
@@ -98,6 +98,9 @@
 .grid-cols-1:hover .absolute-cover{
     top: 0%;
     transition: all 0.5s ease-in-out;
+}
+.grid-cols-1:hover .blur-cover{
+    filter: blur(5px);
 }
 
 @keyframes grow {

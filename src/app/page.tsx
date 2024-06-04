@@ -61,46 +61,75 @@ export default function Home(){
                 <p className="pt-2">this projects are completed or under development</p>
             </div>
             <div className="grid grid-cols-5 p-10 gap-5 mx-20">
-                <div className="grid-cols-1 border rounded overflow-hidden">
-                    <Image src="/project.avif" alt="photo" width={300} height={280}></Image>
-                    <p className="text-center p-5">
-                        <p className="font-bold">Project tile</p>
-                        <p className="text-sm">project description</p>
-                    </p>
-                    <div className="absolute-cover gradient-BG">
-                        <Link href="/profile" className="text-2xl p-3 text-white rounded-full bg-purple-500 border shadow-purple-300 z-50">
+                <div className="grid-cols-1 border border-cyan-500 shadow-2xl shadow-cyan-500 rounded overflow-hidden">
+                    <div className="blur-cover">
+                        <Image src="/project.avif" alt="photo" width={350} height={280}></Image>
+                        <p className="text-center p-5">
+                            <p className="font-bold">Project tile</p>
+                            <p className="text-sm">project description</p>
+                        </p>
+                    </div>
+                    <div className="absolute-cover flex justify-center items-center ">
+                        <Link href="/profile" className="text-2xl p-2 text-white border border-pink-500 rounded-full bg-pink-500 z-50">
                             <RxOpenInNewWindow/>
                         </Link>
-                        
                     </div>
                 </div>
-                <div className="grid-cols-1 border rounded overflow-hidden shadow">
-                    <Image src="/project.avif" alt="photo" width={300} height={280}></Image>
-                    <p className="text-center p-5">
-                        <p className="font-bold">Project tile</p>
-                        <p className="text-sm">project description</p>
-                    </p>
+                <div className="grid-cols-1 border border-cyan-500 shadow-2xl shadow-cyan-500 rounded overflow-hidden">
+                    <div className="blur-cover">
+                        <Image src="/project.avif" alt="photo" width={350} height={280}></Image>
+                        <p className="text-center p-5">
+                            <p className="font-bold">Project tile</p>
+                            <p className="text-sm">project description</p>
+                        </p>
+                    </div>
+                    <div className="absolute-cover flex justify-center items-center ">
+                        <Link href="/profile" className="text-2xl p-2 text-white border border-pink-500 rounded-full bg-pink-500 z-50">
+                            <RxOpenInNewWindow/>
+                        </Link>
+                    </div>
                 </div>
-                <div className="grid-cols-1 border rounded overflow-hidden shadow">
-                    <Image src="/project.avif" alt="photo" width={300} height={280}></Image>
-                    <p className="text-center p-5">
-                        <p className="font-bold">Project tile</p>
-                        <p className="text-sm">project description</p>
-                    </p>
+                <div className="grid-cols-1 border border-cyan-500 shadow-2xl shadow-cyan-500 rounded overflow-hidden">
+                    <div className="blur-cover">
+                        <Image src="/project.avif" alt="photo" width={350} height={280}></Image>
+                        <p className="text-center p-5">
+                            <p className="font-bold">Project tile</p>
+                            <p className="text-sm">project description</p>
+                        </p>
+                    </div>
+                    <div className="absolute-cover flex justify-center items-center ">
+                        <Link href="/profile" className="text-2xl p-2 text-white border border-pink-500 rounded-full bg-pink-500 z-50">
+                            <RxOpenInNewWindow/>
+                        </Link>
+                    </div>
                 </div>
-                <div className="grid-cols-1 border rounded overflow-hidden shadow">
-                <Image src="/project.avif" alt="photo" width={300} height={280}></Image>
-                    <p className="text-center p-5">
-                        <p className="font-bold">Project tile</p>
-                        <p className="text-sm">project description</p>
-                    </p>
+                <div className="grid-cols-1 border border-cyan-500 shadow-2xl shadow-cyan-500 rounded overflow-hidden">
+                    <div className="blur-cover">
+                        <Image src="/project.avif" alt="photo" width={350} height={280}></Image>
+                        <p className="text-center p-5">
+                            <p className="font-bold">Project tile</p>
+                            <p className="text-sm">project description</p>
+                        </p>
+                    </div>
+                    <div className="absolute-cover flex justify-center items-center ">
+                        <Link href="/profile" className="text-2xl p-2 text-white border border-pink-500 rounded-full bg-pink-500 z-50">
+                            <RxOpenInNewWindow/>
+                        </Link>
+                    </div>
                 </div>
-                <div className="grid-cols-1 border rounded overflow-hidden shadow">
-                    <Image src="/project.avif" alt="photo" width={300} height={280}></Image>
-                    <p className="text-center p-5">
-                        <p className="font-bold">Project tile</p>
-                        <p className="text-sm">project description</p>
-                    </p>
+                <div className="grid-cols-1 border border-cyan-500 shadow-2xl shadow-cyan-500 rounded overflow-hidden">
+                    <div className="blur-cover">
+                        <Image src="/project.avif" alt="photo" width={350} height={280}></Image>
+                        <p className="text-center p-5">
+                            <p className="font-bold">Project tile</p>
+                            <p className="text-sm">project description</p>
+                        </p>
+                    </div>
+                    <div className="absolute-cover flex justify-center items-center ">
+                        <Link href="/profile" className="text-2xl p-2 text-white border border-pink-500 rounded-full bg-pink-500 z-50">
+                            <RxOpenInNewWindow/>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
