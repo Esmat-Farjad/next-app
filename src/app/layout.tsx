@@ -3,6 +3,9 @@
 import Link from "next/link";
 import "./style.css";
 import { usePathname } from "next/navigation";
+import { FaFacebookF, FaInstagram, FaRegCopyright, FaTwitter } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
+import { BiLogoGmail } from "react-icons/bi";
 
 
 // export const metadata: Metadata = {
@@ -46,11 +49,20 @@ export default function RootLayout({
         <div>
         {children}
         </div>
-        <footer className={"fixed bottom-0 p-5 mx-10 mt-5"}>
-          <div className={"text-center"}>
-            <h1>copyright</h1>
+        {/* footer */}
+        <div className="bg-gray-800 p-5">
+          <div className="text-center">
+            <p className=""><span className="text-xl">&#169;  </span>2024 portfolio all right reserved</p>
           </div>
-        </footer>
+          <p className="py-3 pr-3 text-center">
+            <Link href="/www.facebook.com"><FaFacebookF className="social-icon"/></Link>
+            <Link href="http://www.github.com/Esmat-Farjad"><FaGithub className="social-icon"/></Link>
+            <Link href="/www.instagram.com"><FaInstagram className="social-icon"/></Link>
+            <Link href="/www.gmail.com"><BiLogoGmail className="social-icon"/></Link>
+            <Link href="/www.twitter.com"><FaTwitter className="social-icon"/></Link>
+        </p>
+        </div>
+        {/* footer */}
       </body>
       
     </html>
