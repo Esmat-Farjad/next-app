@@ -19,11 +19,32 @@ export default function Home(){
     ]
    
     return <div>
-        <div className="heading-container p-10 bg-white h-96 bg-gradient-to-b from-indigo-900 to-pink-800 ">
+        <div className="heading-container px-10 pt-10 bg-white h-100 bg-gradient-to-b from-indigo-900 to-pink-800 ">
             {/* <Image src='next.svg' alt="this is the picture" width={100} height={100}/> */}
            <p className="text-white text-6xl font-bold text-center mt-10 pt-10 ">Welcome to my Portfolio</p>
-           <div className="text-center">this is the subtext comes from the bottom of the page</div>
+           <div className="text-center sub-text">this is the subtext comes from the bottom of the page</div>
+           <div className="feature-holder">
+                <div className="grid gap-5 xl:grid-cols-4 sm:cols-1 xl:mx-20">
+                    <div className="grid-cols-1 p-5 border rounded border-slate-600">
+                        Feature no 1
+                        <p className="py-10">Hello</p>
+                    </div>
+                    <div className="grid-cols-1 p-5 border rounded border-slate-600">
+                        Feature no 1
+                    </div>
+                    <div className="grid-cols-1 p-5 border rounded border-slate-600">
+                        Feature no 1
+                    </div>
+                    <div className="grid-cols-1 p-5 border rounded border-slate-600">
+                        Feature no 1
+                    </div>
+                </div>
+            </div>
         </div>
+        
+
+
+
         <div className="xl:mx-20 xl:px-10 sm:mx-10 md:mx-10 ">
             <div className="grid xl:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 p-10 gap-5 xl:mx-20 sm:mx-10 md:mx-10">
                 <div className="card grid-col-1 image-container">
@@ -122,10 +143,10 @@ export default function Home(){
                 <span className="text-2xl p-3 font-bold">Latest Project</span>
                 <p className="pt-2">this projects are completed or under development</p>
             </div>
-            <div className="grid xl:grid-cols-3 sm:grid-cols-1 md:grid-cols-1 p-10 gap-5 xl:mx-20 sm:mx-10 md:mx-10">
+            <div className="grid xl:grid-cols-4 sm:grid-cols-1 md:grid-cols-1 p-10 gap-5 xl:mx-20 sm:mx-10 md:mx-10">
                 <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 border border-slate-600 rounded overflow-hidden card">
                     <div className="blur-cover">
-                        <Image src="/project.avif" alt="photo" width={550} height={280}></Image>
+                        <Image src="/project.avif" alt="photo" width={400} height={280}></Image>
                         <div className="text-center p-5">
                             <h1 className="font-bold">Project tile</h1>
                             <h4 className="text-sm">project description</h4>
@@ -139,7 +160,7 @@ export default function Home(){
                 </div>
                 <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 border border-slate-600 rounded overflow-hidden card">
                     <div className="blur-cover">
-                        <Image src="/project.avif" alt="photo" width={550} height={280}></Image>
+                        <Image src="/project.avif" alt="photo" width={400} height={280}></Image>
                         <div className="text-center p-5">
                             <h1 className="font-bold">Project tile</h1>
                             <h4 className="text-sm">project description</h4>
@@ -153,7 +174,7 @@ export default function Home(){
                 </div>
                 <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 border border-slate-600 rounded overflow-hidden card">
                     <div className="blur-cover">
-                        <Image src="/project.avif" alt="photo" width={550} height={280}></Image>
+                        <Image src="/project.avif" alt="photo" width={400} height={280}></Image>
                         <div className="text-center p-5">
                             <h1 className="font-bold">Project tile</h1>
                             <h4 className="text-sm">project description</h4>
@@ -167,7 +188,7 @@ export default function Home(){
                 </div>
                 <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 border border-slate-600 rounded overflow-hidden card">
                     <div className="blur-cover">
-                        <Image src="/project.avif" alt="photo" width={550} height={280}></Image>
+                        <Image src="/project.avif" alt="photo" width={400} height={280}></Image>
                         <div className="text-center p-5">
                             <h1 className="font-bold">Project tile</h1>
                             <h4 className="text-sm">project description</h4>
@@ -181,8 +202,7 @@ export default function Home(){
                 </div>
                 <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 border border-slate-600 rounded overflow-hidden card">
                     <div className="blur-cover">
-                        <Image src="/project.avif" alt="photo" objectFit="cover" width={550} height={280}></Image>
-                   
+                        <Image src="/project.avif" alt="photo" objectFit="cover" width={400} height={280}></Image>
                         <div className="text-center p-5">
                             <h1 className="font-bold">Project tile</h1>
                             <h4 className="text-sm">project description</h4>

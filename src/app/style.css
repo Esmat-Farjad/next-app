@@ -37,9 +37,17 @@
 .heading-container p{
     animation: slideLeft 1.3s ease-in-out 1;
 }
-.heading-container div{
+.heading-container .sub-text{
     animation: slideUp 1.3s ease-in-out 1;
 }
+.heading-container{
+    overflow-y: visible;
+}
+.heading-container .feature-holder{
+    margin-top: 8rem;
+    padding-bottom: 0.5rem;
+}
+
 @keyframes slideLeft{
     from{
         transform: translateX(-600px);
@@ -91,7 +99,7 @@
     animation: slideLeft 1.3s ease-in-out 1;
 }
 .info-container{
-    animation: slideRight 2s ease-in-out 1;
+    animation: slideRight 1.3s ease-in-out 1;
 }
 .progress-bar{
     width: 67%;
