@@ -196,11 +196,11 @@ export default function Home(){
                 </div>
             </div>
         </div>
-        <div className="p-10 gap-5 mx-20 my-10">
+        <div className="xl:my-20 xl:px-10 sm:my-10 md:my-10">
             <div className="text-center">
                 <p className="text-4xl font-bold">Skills & Experties</p>
             </div>
-            <div className="grid xl:grid-cols-4 sm:grid-cols-1 md:grid-cols-1 place-content-center gap-5 my-5">
+            <div className="grid xl:grid-cols-3 sm:grid-cols-1 md:grid-cols-1 place-content-center p-10 gap-5 xl:mx-20 sm:mx-10 md:mx-10">
                 <div className="skills">
                     <div className="flex justify-between mb-1">
                         <span className="text-base font-medium text-blue-700 dark:text-white">
@@ -251,12 +251,12 @@ export default function Home(){
             </div>
         </div>
         {/* contact me */}
-        <div className="contact-section p-10 gap-5 mx-20 my-10">
+        <div className="contact-section xl:my-20 xl:px-10 sm:my-10 md:my-10">
             <div className="heading text-center">
                 <p className="text-4xl font-bold">Contact me</p>
                 <span className="">feel free to contact me</span>
             </div>
-            <div className="grid xl:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 gap-5 mt-10">
+            <div className="grid xl:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 gap-5 mt-10 p-10 gap-5 xl:mx-20 sm:mx-10 md:mx-10">
                 <div className="border border-slate-600 rounded  p-5 contact-holder2">
                     <p className="text-center text-2xl pt-10">Contact Information</p>
                     <ul className="my-5">
