@@ -8,7 +8,8 @@ import { BiLogoGmail } from "react-icons/bi";
 import { FaTwitter } from "react-icons/fa";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import { CgPhone } from "react-icons/cg";
-import { FaLocationCrosshairs } from "react-icons/fa6";
+import { FaLocationCrosshairs, FaCode } from "react-icons/fa6";
+import { AiOutlineAntDesign, AiOutlineCloudServer } from "react-icons/ai";
 export default function Home(){
     const blogId = 100
     const carouselData = [
@@ -17,54 +18,113 @@ export default function Home(){
     ]
    
     return <div>
-        <div className="heading-container p-10 bg-white h-96 bg-gradient-to-b from-indigo-900 to-pink-800">
+        <div className="heading-container p-10 bg-white h-96 bg-gradient-to-b from-indigo-900 to-pink-800 ">
             {/* <Image src='next.svg' alt="this is the picture" width={100} height={100}/> */}
            <p className="text-white text-6xl font-bold text-center mt-10 pt-10 ">Welcome to my Portfolio</p>
            <div className="text-center">this is the subtext comes from the bottom of the page</div>
-           
         </div>
-        <div className="grid xl:grid-cols-5 md:grid-cols-1 sm:grid-cols-1 p-10 gap-5 xl:mx-20 md:mx-10 sm:mx-10">
-            <div className="card grid-col-1 image-container shadow-effect">
-                <div className="border border-gray-500 rounded overflow-hidden shadow">
-                    <Image src="/profile.jpg" alt="profile" width={550} height={700}></Image>
+        <div className="xl:mx-20 xl:px-10 sm:mx-10 md:mx-10 ">
+            <div className="grid xl:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 p-10 gap-5 xl:mx-20 sm:mx-10 md:mx-10">
+                <div className="card grid-col-1 image-container">
+                    <div className="rounded overflow-hidden shadow h-96">
+                        <Image src="/profile.png" alt="profile" fill></Image>
+                    </div>
+                </div>
+                <div className="xl:grid-cols-1 p-5 sm:grid-cols-1 md:grid-cols-1 info-container ">
+                    <div className="mr-5">
+                        <p className="text-4xl font-bold">Esmatullah Hashimi</p>
+                        <p className="tex-lg text-teal-500 mb-5">Full Stack Software developer</p>
+                        <p className="">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the 
+                        industrys standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled 
+                        it to make a type specimen book. It has survived not only five 
+                        centuries, but also the leap into electronic typesetting, remaining 
+                        essentially unchanged. It was popularised in the 1960s with the release 
+                        of Letraset sheets containing Lorem Ipsum passages, and more recently with 
+                        desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                        <p className="text-pink-600">Join me on social media</p>
+                        <p className="py-3 pr-3">
+                            <Link href="/www.facebook.com"><FaFacebookF className="social-icon"/></Link>
+                            <Link href="http://www.github.com/Esmat-Farjad"><FaGithub className="social-icon"/></Link>
+                            <Link href="/www.instagram.com"><FaInstagram className="social-icon"/></Link>
+                            <Link href="/www.gmail.com"><BiLogoGmail className="social-icon"/></Link>
+                            <Link href="/www.twitter.com"><FaTwitter className="social-icon"/></Link>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div className="xl:col-span-4 sm:grid-cols-1 info-container shadow-effect p-5 rounded">
-                <div className="mr-5">
-                    <p className="text-4xl font-bold">Esmatullah Hashimi</p>
-                    <p className="tex-lg text-teal-500 mb-5">Full Stack Software developer</p>
-                    <p className="">
-                    Lorem Ipsum is simply dummy text of the printing and 
-                    typesetting industry. Lorem Ipsum has been the 
-                    industrys standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled 
-                    it to make a type specimen book. It has survived not only five 
-                    centuries, but also the leap into electronic typesetting, remaining 
-                    essentially unchanged. It was popularised in the 1960s with the release 
-                    of Letraset sheets containing Lorem Ipsum passages, and more recently with 
-                    desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        {/* services */}
+        <div className="services-section xl:my-20 xl:px-10 sm:my-10 md:my-10 ">
+            <div className="my-10 text-center">
+                <p className="text-2xl font-bold">Services</p>
+                <span className="">services provided for you</span>
+            </div>
+            <div className="grid xl:grid-cols-3 sm:grid-cols-1 md:grid-cols-1 p-10 gap-5 xl:mx-20 sm:mx-10 md:mx-10">
+                <div className="p-5 rounded border-slate-600 hover:border duration-300">
+                    <p className="font-bold capitalize">
+                        <span className="text-2xl mr-2"><FaCode className="inline"/></span>
+                        <span className="text-xl">[service name]</span>
                     </p>
-                    <p className="text-pink-600">Join me on social media</p>
-                    <p className="py-3 pr-3">
-                        <Link href="/www.facebook.com"><FaFacebookF className="social-icon"/></Link>
-                        <Link href="http://www.github.com/Esmat-Farjad"><FaGithub className="social-icon"/></Link>
-                        <Link href="/www.instagram.com"><FaInstagram className="social-icon"/></Link>
-                        <Link href="/www.gmail.com"><BiLogoGmail className="social-icon"/></Link>
-                        <Link href="/www.twitter.com"><FaTwitter className="social-icon"/></Link>
+                    <p className="pl-8">
+                        <span className="text-sm">
+                        Donec ac ex et diam eleifend molestie.
+                        Vestibulum auctor rutrum viverra. Suspendisse pulvinar vehicula auctor. 
+                        Phasellus sed pretium arcu. 
+                        </span>
+                    </p>
+                    <p className="text-xsm text-cyan-500 hover:font-bold duration-300 pl-8 my-2">
+                        <Link href="/">learn more...</Link>
+                    </p>
+                </div>
+                <div className="p-5 rounded border-slate-600 hover:border duration-300">
+                    <p className="font-bold capitalize">
+                        <span className="text-2xl mr-2"><AiOutlineCloudServer className="inline"/></span>
+                        <span className="text-xl">[service name]</span>
+                    </p>
+                    <p className="pl-8">
+                        <span className="text-sm">
+                        Donec ac ex et diam eleifend molestie.
+                        Vestibulum auctor rutrum viverra. Suspendisse pulvinar vehicula auctor. 
+                        Phasellus sed pretium arcu. 
+                        </span>
+                    </p>
+                    <p className="text-xsm text-cyan-500 hover:font-bold duration-300 pl-8 my-2">
+                        <Link href="/">learn more...</Link>
+                    </p>
+                </div>
+                <div className="p-5 rounded border-slate-600 hover:border duration-300">
+                    <p className="font-bold capitalize">
+                        <span className="text-2xl mr-2"><AiOutlineAntDesign className="inline"/></span>
+                        <span className="text-xl">[service name]</span>
+                    </p>
+                    <p className="pl-8">
+                        <span className="text-sm">
+                        Donec ac ex et diam eleifend molestie.
+                        Vestibulum auctor rutrum viverra. Suspendisse pulvinar vehicula auctor. 
+                        Phasellus sed pretium arcu. 
+                        </span>
+                    </p>
+                    <p className="text-xsm text-cyan-500 hover:font-bold duration-300 pl-8 my-2">
+                        <Link href="/">learn more...</Link>
                     </p>
                 </div>
             </div>
         </div>
+        {/* services */}
         {/* project section */}
-        <div className="project-section">
+        <div className="project-section xl:my-20 xl:px-10 sm:my-10 md:my-10">
             <div className="text-2xl text-center">
-                <span className="text-4xl p-3 font-bold">Latest Project</span>
+                <span className="text-2xl p-3 font-bold">Latest Project</span>
                 <p className="pt-2">this projects are completed or under development</p>
             </div>
-            <div className="grid xl:grid-cols-5 sm:grid-cols-1 md:grid-cols-1 p-10 gap-5 xl:mx-20 sm:mx-10 md:mx-10">
-                <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 shadow-effect rounded overflow-hidden card">
+            <div className="grid xl:grid-cols-3 sm:grid-cols-1 md:grid-cols-1 p-10 gap-5 xl:mx-20 sm:mx-10 md:mx-10">
+                <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 border border-slate-600 rounded overflow-hidden card">
                     <div className="blur-cover">
-                        <Image src="/project.avif" alt="photo" width={350} height={280}></Image>
+                        <Image src="/project.avif" alt="photo" width={550} height={280}></Image>
                         <p className="text-center p-5">
                             <p className="font-bold">Project tile</p>
                             <p className="text-sm">project description</p>
@@ -76,9 +136,9 @@ export default function Home(){
                         </Link>
                     </div>
                 </div>
-                <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 shadow-effect rounded overflow-hidden card">
+                <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 border border-slate-600 rounded overflow-hidden card">
                     <div className="blur-cover">
-                        <Image src="/project.avif" alt="photo" width={350} height={280}></Image>
+                        <Image src="/project.avif" alt="photo" width={550} height={280}></Image>
                         <p className="text-center p-5">
                             <p className="font-bold">Project tile</p>
                             <p className="text-sm">project description</p>
@@ -90,9 +150,9 @@ export default function Home(){
                         </Link>
                     </div>
                 </div>
-                <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 shadow-effect rounded overflow-hidden card">
+                <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 border border-slate-600 rounded overflow-hidden card">
                     <div className="blur-cover">
-                        <Image src="/project.avif" alt="photo" width={350} height={280}></Image>
+                        <Image src="/project.avif" alt="photo" width={550} height={280}></Image>
                         <p className="text-center p-5">
                             <p className="font-bold">Project tile</p>
                             <p className="text-sm">project description</p>
@@ -104,9 +164,9 @@ export default function Home(){
                         </Link>
                     </div>
                 </div>
-                <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 shadow-effect rounded overflow-hidden card">
+                <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 border border-slate-600 rounded overflow-hidden card">
                     <div className="blur-cover">
-                        <Image src="/project.avif" alt="photo" width={350} height={280}></Image>
+                        <Image src="/project.avif" alt="photo" width={550} height={280}></Image>
                         <p className="text-center p-5">
                             <p className="font-bold">Project tile</p>
                             <p className="text-sm">project description</p>
@@ -118,9 +178,9 @@ export default function Home(){
                         </Link>
                     </div>
                 </div>
-                <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 shadow-effect rounded overflow-hidden card">
+                <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 border border-slate-600 rounded overflow-hidden card">
                     <div className="blur-cover">
-                    <Image src="/project.avif" alt="photo" objectFit="cover" width={350} height={280}></Image>
+                    <Image src="/project.avif" alt="photo" objectFit="cover" width={550} height={280}></Image>
                    
                         <p className="text-center p-5">
                             <p className="font-bold">Project tile</p>
@@ -188,7 +248,7 @@ export default function Home(){
                 <span className="">feel free to contact me</span>
             </div>
             <div className="grid xl:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 gap-5 mt-10">
-                <div className="border border-cyan-500 rounded shadow-xl shadow-cyan-500 p-5 contact-holder2">
+                <div className="border border-slate-600 rounded  p-5 contact-holder2">
                     <p className="text-center text-2xl pt-10">Contact Information</p>
                     <ul className="my-5">
                         <li className="p-4">
@@ -205,7 +265,7 @@ export default function Home(){
                         </li>
                     </ul>
                 </div>
-                <div className="rounded p-5 shadow-effect contact-holder1">
+                <div className="rounded p-5 border border-slate-600 contact-holder1">
                     <p className="text-center text-2xl pt-10">Query</p>
                     <form action="#" className="flex flex-col mx-10">
                         <label htmlFor="fullname">Full Name</label>
