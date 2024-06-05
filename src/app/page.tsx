@@ -8,8 +8,9 @@ import { BiLogoGmail } from "react-icons/bi";
 import { FaTwitter } from "react-icons/fa";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import { CgPhone } from "react-icons/cg";
-import { FaLocationCrosshairs, FaCode } from "react-icons/fa6";
-import { AiOutlineAntDesign, AiOutlineCloudServer } from "react-icons/ai";
+import { RiNextjsFill, RiReactjsFill } from "react-icons/ri";
+import { FaLocationCrosshairs, FaCode, FaPython } from "react-icons/fa6";
+import { AiOutlineAntDesign, AiOutlineCloudServer, AiOutlineJavaScript } from "react-icons/ai";
 export default function Home(){
     const blogId = 100
     const carouselData = [
@@ -202,8 +203,10 @@ export default function Home(){
             <div className="grid xl:grid-cols-4 sm:grid-cols-1 md:grid-cols-1 place-content-center gap-5 my-5">
                 <div className="skills">
                     <div className="flex justify-between mb-1">
-                    <span className="text-base font-medium text-blue-700 dark:text-white">Python</span>
-                    <span className="text-sm font-medium text-blue-700 dark:text-white">67%</span>
+                        <span className="text-base font-medium text-blue-700 dark:text-white">
+                            <FaPython className="inline text-2xl mr-2"/>Python
+                        </span>
+                        <span className="text-sm font-medium text-blue-700 dark:text-white">67%</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                     <div className="bg-blue-600 h-2.5 rounded-full progress-bar"></div>
@@ -212,8 +215,10 @@ export default function Home(){
 
                 <div className="skills">
                     <div className="flex justify-between mb-1">
-                    <span className="text-base font-medium text-blue-700 dark:text-white">Javascript</span>
-                    <span className="text-sm font-medium text-blue-700 dark:text-white">67%</span>
+                        <span className="text-base font-medium text-blue-700 dark:text-white">
+                            <AiOutlineJavaScript className="text-2xl mr-2 inline"/>Javascript
+                        </span>
+                        <span className="text-sm font-medium text-blue-700 dark:text-white">67%</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                     <div className="bg-blue-600 h-2.5 rounded-full progress-bar"></div>
@@ -222,8 +227,10 @@ export default function Home(){
 
                 <div className="skills">
                     <div className="flex justify-between mb-1">
-                    <span className="text-base font-medium text-blue-700 dark:text-white">Next Js</span>
-                    <span className="text-sm font-medium text-blue-700 dark:text-white">67%</span>
+                        <span className="text-base font-medium text-blue-700 dark:text-white">
+                            <RiNextjsFill className="text-2xl mr-2 inline"/>Next Js
+                        </span>
+                        <span className="text-sm font-medium text-blue-700 dark:text-white">67%</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                     <div className="bg-blue-600 h-2.5 rounded-full progress-bar"></div>
@@ -232,7 +239,9 @@ export default function Home(){
 
                 <div className="skills">
                     <div className="flex justify-between mb-1">
-                    <span className="text-base font-medium text-blue-700 dark:text-white">React Js</span>
+                        <span className="text-base font-medium text-blue-700 dark:text-white">
+                            <RiReactjsFill className="inline text-2xl mr-2"/>React Js
+                        </span>
                     <span className="text-sm font-medium text-blue-700 dark:text-white">67%</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
