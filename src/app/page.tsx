@@ -32,10 +32,10 @@ export default function Home(){
                     <div className="feature-customization">
                         Feature no 1
                     </div>
-                    <div className="feature-customization">
+                    <div className=" border border-slate-600 p-5 bg-slate-900">
                         Feature no 1
                     </div>
-                    <div className="feature-customization">
+                    <div className=" border border-slate-600 p-5 bg-slate-900">
                         Feature no 1
                     </div>
                     <div className="feature-customization">
