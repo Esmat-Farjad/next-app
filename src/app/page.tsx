@@ -1,16 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 // icons
-import { FaFacebookF } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
-import { FaTwitter } from "react-icons/fa";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import { CgPhone } from "react-icons/cg";
+import { TbClockCheck } from "react-icons/tb";
+import { MdOutlineMobileFriendly } from "react-icons/md";
 import { RiNextjsFill, RiReactjsFill } from "react-icons/ri";
-import { FaLocationCrosshairs, FaCode, FaPython } from "react-icons/fa6";
-import { AiOutlineAntDesign, AiOutlineCloudServer, AiOutlineJavaScript } from "react-icons/ai";
+import { FaLocationCrosshairs, FaCode, FaPython, FaHeartCircleCheck } from "react-icons/fa6";
+import { AiOutlineAntDesign, AiOutlineCloudServer, AiOutlineJavaScript, AiOutlineSafety } from "react-icons/ai";
 export default function Home(){
     const blogId = 100
     const carouselData = [
@@ -24,26 +23,40 @@ export default function Home(){
            <p className="text-white text-6xl font-bold text-center mt-10 pt-10 ">Welcome to my Portfolio</p>
            <div className="text-center sub-text">this is the subtext comes from the bottom of the page</div>
            <div className="feature-holder">
-                <div className="grid gap-2 xl:grid-cols-6 sm:cols-1 xl:mx-20">
+                <div className="grid gap-2 xl:grid-cols-4 sm:cols-1 xl:mx-20">
                     <div className="feature-customization">
-                        <p className="font-bold">Security</p>
-                        <span className="">this feature is avialibel for you</span>
-                    </div>
-                    <div className="feature-customization">
-                        Feature no 1
-                    </div>
-                    <div className=" border border-slate-600 p-5 bg-slate-900">
-                        Feature no 1
-                    </div>
-                    <div className=" border border-slate-600 p-5 bg-slate-900">
-                        Feature no 1
+                        <p className="font-bold">
+                            <AiOutlineSafety className="inline text-2xl mr-2"/>Security
+                        </p>
+                        <p className="ml-8 text-xs">
+                            Protect your data with our robust security features, including encryption, authentication, and access controls, ensuring your online presence remains safe and secure.
+                        </p>
                     </div>
                     <div className="feature-customization">
-                        Feature no 1
+                        <p className="font-bold">
+                            <MdOutlineMobileFriendly className="inline text-2xl mr-2"/>Flexibility
+                        </p>
+                        <p className="ml-8 text-xs">
+                        Experience unparalleled flexibility with our versatile features, empowering you to customize and adapt your online experience effortlessly to meet your unique needs and preferences.
+                        </p>
                     </div>
                     <div className="feature-customization">
-                        Feature no 1
+                        <p className="font-bold">
+                            <FaHeartCircleCheck className="inline text-2xl mr-2"/>Effeciency
+                        </p>
+                        <p className="ml-8 text-xs">
+                        Maximize efficiency with our streamlined features, designed to optimize workflows and streamline processes, so you can achieve more in less time.
+                        </p>
                     </div>
+                    <div className="feature-customization">
+                        <p className="font-bold">
+                            <TbClockCheck className="inline text-2xl mr-2"/>Real-Time
+                        </p>
+                        <p className="ml-8 text-xs">
+                        Stay ahead with our real-time features, providing instant updates and responsiveness, ensuring you are always in sync with the latest information and developments.
+                        </p>
+                    </div>
+                    
                 </div>
             </div>
         </div>
