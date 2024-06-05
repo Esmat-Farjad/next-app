@@ -24,10 +24,9 @@ export default function Home(){
            <p className="text-white text-6xl font-bold text-center mt-10 pt-10 ">Welcome to my Portfolio</p>
            <div className="text-center sub-text">this is the subtext comes from the bottom of the page</div>
            <div className="feature-holder">
-                <div className="grid gap-5 xl:grid-cols-4 sm:cols-1 xl:mx-20">
-                    <div className="grid-cols-1 p-5 border rounded border-slate-600">
+                <div className="grid gap-2 xl:grid-cols-4 sm:cols-1 xl:mx-20">
+                    <div className="grid-cols-1 p-5 border rounded border-rose-700 ">
                         Feature no 1
-                        <p className="py-10">Hello</p>
                     </div>
                     <div className="grid-cols-1 p-5 border rounded border-slate-600">
                         Feature no 1
@@ -55,7 +54,7 @@ export default function Home(){
                 <div className="xl:grid-cols-1 p-5 sm:grid-cols-1 md:grid-cols-1 info-container ">
                     <div className="mr-5">
                         <p className="text-4xl font-bold">Esmatullah Hashimi</p>
-                        <p className="tex-lg text-teal-500 mb-5">Full Stack Software developer</p>
+                        <p className="tex-lg mb-5 antialiased hover:subpixel-antialiased">Full Stack Software developer</p>
                         <p className="">
                         Lorem Ipsum is simply dummy text of the printing and 
                         typesetting industry. Lorem Ipsum has been the 
