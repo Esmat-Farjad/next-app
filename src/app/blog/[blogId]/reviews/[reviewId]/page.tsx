@@ -11,10 +11,10 @@ export default function BlogReviews(
             blogId: string;
         }
     }) {
-        const random = getRandomInt(3);
-        if(random === 2){
-            throw new Error("Error too much refresh...wait for a moment and ");
-        }
+        // const random = getRandomInt(3);
+        // if(random === 2){
+        //     throw new Error("Error too much refresh...wait for a moment and ");
+        // }
         if(parseInt(params.reviewId) > 1000){
             notFound();
         }

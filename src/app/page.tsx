@@ -126,10 +126,10 @@ export default function Home(){
                 <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 border border-slate-600 rounded overflow-hidden card">
                     <div className="blur-cover">
                         <Image src="/project.avif" alt="photo" width={550} height={280}></Image>
-                        <p className="text-center p-5">
-                            <p className="font-bold">Project tile</p>
-                            <p className="text-sm">project description</p>
-                        </p>
+                        <div className="text-center p-5">
+                            <h1 className="font-bold">Project tile</h1>
+                            <h4 className="text-sm">project description</h4>
+                        </div>
                     </div>
                     <div className="absolute-cover flex justify-center items-center ">
                         <Link href="/profile" className="text-2xl p-2 text-white border border-pink-500 rounded-full bg-pink-500 z-50">
@@ -140,10 +140,10 @@ export default function Home(){
                 <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 border border-slate-600 rounded overflow-hidden card">
                     <div className="blur-cover">
                         <Image src="/project.avif" alt="photo" width={550} height={280}></Image>
-                        <p className="text-center p-5">
-                            <p className="font-bold">Project tile</p>
-                            <p className="text-sm">project description</p>
-                        </p>
+                        <div className="text-center p-5">
+                            <h1 className="font-bold">Project tile</h1>
+                            <h4 className="text-sm">project description</h4>
+                        </div>
                     </div>
                     <div className="absolute-cover flex justify-center items-center ">
                         <Link href="/profile" className="text-2xl p-2 text-white border border-pink-500 rounded-full bg-pink-500 z-50">
@@ -154,10 +154,10 @@ export default function Home(){
                 <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 border border-slate-600 rounded overflow-hidden card">
                     <div className="blur-cover">
                         <Image src="/project.avif" alt="photo" width={550} height={280}></Image>
-                        <p className="text-center p-5">
-                            <p className="font-bold">Project tile</p>
-                            <p className="text-sm">project description</p>
-                        </p>
+                        <div className="text-center p-5">
+                            <h1 className="font-bold">Project tile</h1>
+                            <h4 className="text-sm">project description</h4>
+                        </div>
                     </div>
                     <div className="absolute-cover flex justify-center items-center ">
                         <Link href="/profile" className="text-2xl p-2 text-white border border-pink-500 rounded-full bg-pink-500 z-50">
@@ -168,10 +168,10 @@ export default function Home(){
                 <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 border border-slate-600 rounded overflow-hidden card">
                     <div className="blur-cover">
                         <Image src="/project.avif" alt="photo" width={550} height={280}></Image>
-                        <p className="text-center p-5">
-                            <p className="font-bold">Project tile</p>
-                            <p className="text-sm">project description</p>
-                        </p>
+                        <div className="text-center p-5">
+                            <h1 className="font-bold">Project tile</h1>
+                            <h4 className="text-sm">project description</h4>
+                        </div>
                     </div>
                     <div className="absolute-cover flex justify-center items-center ">
                         <Link href="/profile" className="text-2xl p-2 text-white border border-pink-500 rounded-full bg-pink-500 z-50">
@@ -181,12 +181,12 @@ export default function Home(){
                 </div>
                 <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 border border-slate-600 rounded overflow-hidden card">
                     <div className="blur-cover">
-                    <Image src="/project.avif" alt="photo" objectFit="cover" width={550} height={280}></Image>
+                        <Image src="/project.avif" alt="photo" objectFit="cover" width={550} height={280}></Image>
                    
-                        <p className="text-center p-5">
-                            <p className="font-bold">Project tile</p>
-                            <p className="text-sm">project description</p>
-                        </p>
+                        <div className="text-center p-5">
+                            <h1 className="font-bold">Project tile</h1>
+                            <h4 className="text-sm">project description</h4>
+                        </div>
                     </div>
                     <div className="absolute-cover flex justify-center items-center ">
                         <Link href="/profile" className="text-2xl p-2 text-white border border-pink-500 rounded-full bg-pink-500 z-50">
