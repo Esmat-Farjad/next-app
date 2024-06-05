@@ -24,26 +24,30 @@ export default function Home(){
            <p className="text-white text-6xl font-bold text-center mt-10 pt-10 ">Welcome to my Portfolio</p>
            <div className="text-center sub-text">this is the subtext comes from the bottom of the page</div>
            <div className="feature-holder">
-                <div className="grid gap-2 xl:grid-cols-4 sm:cols-1 xl:mx-20">
-                    <div className="grid-cols-1 p-5 border rounded border-rose-700 ">
+                <div className="grid gap-2 xl:grid-cols-6 sm:cols-1 xl:mx-20">
+                    <div className="feature-customization">
+                        <p className="font-bold">Security</p>
+                        <span className="">this feature is avialibel for you</span>
+                    </div>
+                    <div className="feature-customization">
                         Feature no 1
                     </div>
-                    <div className="grid-cols-1 p-5 border rounded border-slate-600">
+                    <div className="feature-customization">
                         Feature no 1
                     </div>
-                    <div className="grid-cols-1 p-5 border rounded border-slate-600">
+                    <div className="feature-customization">
                         Feature no 1
                     </div>
-                    <div className="grid-cols-1 p-5 border rounded border-slate-600">
+                    <div className="feature-customization">
+                        Feature no 1
+                    </div>
+                    <div className="feature-customization">
                         Feature no 1
                     </div>
                 </div>
             </div>
         </div>
-        
-
-
-
+        {/* about */}
         <div className="xl:mx-20 xl:px-10 sm:mx-10 md:mx-10 ">
             <div className="grid xl:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 p-10 gap-5 xl:mx-20 sm:mx-10 md:mx-10">
                 <div className="card grid-col-1 image-container">

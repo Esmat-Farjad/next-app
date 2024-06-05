@@ -28,6 +28,11 @@
         @apply border border-cyan-500 shadow-xl shadow-cyan-500;
     }
 }
+@layer components{
+    .feature-customization{
+        @apply grid-cols-1 p-5 border origin-center rotate-12 rounded border-slate-600 hover:rotate-0 duration-500 bg-slate-900;
+    }
+}
 .eye-icon{
     position: absolute;
     top: 37.8%;
