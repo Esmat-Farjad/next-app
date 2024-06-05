@@ -287,43 +287,8 @@ export default function Home(){
             </div>
         </div>
         {/* contact me */}
-        <div className="contact-section xl:my-20 xl:px-10 sm:my-10 md:my-10">
-            <div className="heading text-center">
-                <p className="text-4xl font-bold">Contact me</p>
-                <span className="">feel free to contact me</span>
-            </div>
-            <div className="grid xl:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 gap-5 mt-10 p-10 gap-5 xl:mx-20 sm:mx-10 md:mx-10">
-                <div className="border border-slate-600 rounded  p-5 contact-holder2">
-                    <p className="text-center text-2xl pt-10">Contact Information</p>
-                    <ul className="my-5">
-                        <li className="p-4">
-                            <BiLogoGmail className="inline text-2xl"/> 
-                            <span className="mx-2">esmatullah@gmail.com</span>
-                        </li>
-                        <li className="p-4">
-                            <CgPhone className="inline text-2xl"/>
-                            <span className="mx-2">+93 (0) 74 862 1879</span>
-                        </li>
-                        <li className="p-4">
-                            <FaLocationCrosshairs className="text-2xl inline"/>
-                            <span className="mx-2">House No.12, Imam Reza path, Shaheed Mazari Road, Kabul, Afghanistn</span>
-                        </li>
-                    </ul>
-                </div>
-                <div className="rounded p-5 border border-slate-600 contact-holder1">
-                    <p className="text-center text-2xl pt-10">Query</p>
-                    <form action="#" className="flex flex-col mx-10">
-                        <label htmlFor="fullname">Full Name</label>
-                        <input type="text" className="form-input" id="fullname"/>
-                        <label htmlFor="email">Email</label>
-                        <input type="email" className="form-input" id="email"/>
-                        
-                        <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
-                        <textarea id="message" rows={4} className="form-input" placeholder="Write your thoughts here..."></textarea>
-                        <button type="submit" className="btn-transparent my-10 w-24">Submit</button>
-                    </form>
-                </div>
-            </div>
+        <div className="section-container border rounded">
+            <p className="my-10">Hello</p>
         </div>
 </div> 
 

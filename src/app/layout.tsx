@@ -50,11 +50,11 @@ export default function RootLayout({
         {children}
         </div>
         {/* footer */}
-        <div className="bg-gray-800 p-5">
-          <div className="text-center">
+        <div className="border-t border-gray-600 p-5">
+          <div className="text-center text-gray-600 hover:text-white duration-300">
             <p className=""><span className="text-xl">&#169;  </span>2024 portfolio all right reserved</p>
           </div>
-          <p className="py-3 pr-3 text-center">
+          <p className="py-3 pr-3 text-center text-gray-600">
             <Link href="/www.facebook.com"><FaFacebookF className="social-icon"/></Link>
             <Link href="http://www.github.com/Esmat-Farjad"><FaGithub className="social-icon"/></Link>
             <Link href="/www.instagram.com"><FaInstagram className="social-icon"/></Link>
