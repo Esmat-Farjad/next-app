@@ -20,7 +20,7 @@ export default function Home(){
     return <div>
         <div className="heading-container px-10 pt-10 bg-white h-100 bg-gradient-to-b from-indigo-900 to-pink-800 ">
             {/* <Image src='next.svg' alt="this is the picture" width={100} height={100}/> */}
-           <p className="text-white text-6xl font-bold text-center mt-10 pt-10 ">Welcome to my Portfolio</p>
+           <p className="header-text text-white text-6xl font-bold text-center mt-10 pt-10 ">Welcome to my Portfolio</p>
            <div className="text-center sub-text">this is the subtext comes from the bottom of the page</div>
            <div className="feature-holder">
                 <div className="grid gap-2 xl:grid-cols-4 sm:cols-1 xl:mx-20">

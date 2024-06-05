@@ -3,7 +3,7 @@
 import Link from "next/link";
 import "./style.css";
 import { usePathname } from "next/navigation";
-import { FaFacebookF, FaInstagram, FaRegCopyright, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
 
