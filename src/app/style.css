@@ -91,7 +91,7 @@
     animation: slideLeft 1.3s ease-in-out 1;
 }
 .info-container{
-    animation: slideRight 1.3s ease-in-out 1;
+    animation: slideRight 2s ease-in-out 1;
 }
 .progress-bar{
     width: 67%;
