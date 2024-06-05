@@ -61,8 +61,8 @@ export default function Home(){
             </div>
         </div>
         {/* about */}
-        <div className="xl:mx-20 xl:px-10 sm:mx-10 md:mx-10 ">
-            <div className="grid xl:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 p-10 gap-5 xl:mx-20 sm:mx-10 md:mx-10">
+        <div className="section-container">
+            <div className="grid xl:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 gap-5">
                 <div className="card grid-col-1 image-container">
                     <div className="rounded overflow-hidden shadow h-96">
                         <Image src="/profile.png" alt="profile" fill></Image>
@@ -96,12 +96,12 @@ export default function Home(){
             </div>
         </div>
         {/* services */}
-        <div className="services-section xl:my-20 xl:px-10 sm:my-10 md:my-10 ">
+        <div className="services-section section-container">
             <div className="my-10 text-center">
                 <p className="text-2xl font-bold">Services</p>
                 <span className="">services provided for you</span>
             </div>
-            <div className="grid xl:grid-cols-3 sm:grid-cols-1 md:grid-cols-1 p-10 gap-5 xl:mx-20 sm:mx-10 md:mx-10">
+            <div className="grid xl:grid-cols-3 sm:grid-cols-1 md:grid-cols-1 gap-5">
                 <div className="p-5 rounded border-slate-600 hover:border duration-300">
                     <p className="font-bold capitalize">
                         <span className="text-2xl mr-2"><FaCode className="inline"/></span>
@@ -154,12 +154,12 @@ export default function Home(){
         </div>
         {/* services */}
         {/* project section */}
-        <div className="project-section xl:my-20 xl:px-10 sm:my-10 md:my-10">
-            <div className="text-2xl text-center">
+        <div className="section-container">
+            <div className="text-2xl text-center my-10">
                 <span className="text-2xl p-3 font-bold">Latest Project</span>
                 <p className="pt-2">this projects are completed or under development</p>
             </div>
-            <div className="grid xl:grid-cols-4 sm:grid-cols-1 md:grid-cols-1 p-10 gap-5 xl:mx-20 sm:mx-10 md:mx-10">
+            <div className="grid xl:grid-cols-4 sm:grid-cols-1 md:grid-cols-1 gap-5">
                 <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 border border-slate-600 rounded overflow-hidden card">
                     <div className="blur-cover">
                         <Image src="/project.avif" alt="photo" width={400} height={280}></Image>
@@ -232,11 +232,11 @@ export default function Home(){
                 </div>
             </div>
         </div>
-        <div className="xl:my-20 xl:px-10 sm:my-10 md:my-10">
+        <div className="section-container">
             <div className="text-center">
                 <p className="text-4xl font-bold">Skills & Experties</p>
             </div>
-            <div className="grid xl:grid-cols-3 sm:grid-cols-1 md:grid-cols-1 place-content-center p-10 gap-5 xl:mx-20 sm:mx-10 md:mx-10">
+            <div className="grid xl:grid-cols-3 sm:grid-cols-1 md:grid-cols-1 gap-5">
                 <div className="skills">
                     <div className="flex justify-between mb-1">
                         <span className="text-base font-medium text-blue-700 dark:text-white">
@@ -287,8 +287,21 @@ export default function Home(){
             </div>
         </div>
         {/* contact me */}
-        <div className="section-container border rounded">
-            <p className="my-10">Hello</p>
+        <div className="section-container">
+            <div className="bg-slate-800 m-5 p-5 rounded-lg ">
+                <h1 className="text-center text-4xl p-5 font-bold">Subscribe for our newsletter </h1>
+                <p className="text-center mx-auto w-3/4 text-lg text-gray-500">
+                Do you want to get notified when a new article is published ? Sign up for our newsletter and you will be among the first to find out about new articles, courses and features.
+                </p>
+                <div className="flex justify-center items-center p-5 my-5">
+                    <form action="#" className="relative w-1/2 ">
+                        <input type="text" className="form-input" placeholder="Enter your Email"/>
+                        <span className="absolute"></span>
+                        <button className="inline bg-gradient-to-r from-rose-500 to-pink-500 p-2 rounded-lg absolute top-0 right-0 z-100 border-pink-500 border">Subscribe</button>
+                        <p className="text-center text-gray-500 mx-auto text-sm">We care about the protection of your data. Read our <Link href="/" className="hover:text-gray-300 duration-300">Privacy Policy.</Link></p>
+                    </form>
+                </div>
+            </div>
         </div>
 </div> 
 

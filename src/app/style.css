@@ -35,7 +35,7 @@
 }
 @layer components{
     .section-container{
-        @apply xl:mx-44 lg:mx-44 sm:mx-16 md:mx-16;
+        @apply xl:mx-44 lg:mx-44 sm:mx-16 md:mx-16 xl:my-20 lg:my-20 sm:my-10 md:my-10;
     }
 }
 .eye-icon{
