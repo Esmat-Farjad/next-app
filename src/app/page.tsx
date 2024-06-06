@@ -249,7 +249,7 @@ export default function Home(){
         <div className="section-container p-10">
             <div className="text-2xl text-center my-10">
                 <span className="text-2xl p-3 font-bold">Skills and Experties</span>
-                <p className="pt-2"></p>
+                <p className="pt-2">We possess expertise in a diverse range of technologies within our professional domain</p>
             </div>
             <div className="grid xl:grid-cols-6 md:grid-cols-3 sm:grid-cols-1 gap-2 place-content-center">
                 {technology.map((item, index) => {
@@ -270,26 +270,6 @@ export default function Home(){
                         </div>
                     );
                 })}
-                
-                {/* 
-                
-               
-                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-3 text-center">
-                    <div className="header">
-                        <span className="icon"><RiTailwindCssFill className="text-4xl inline fill-cyan-500"/></span>
-                        <h1 className="text-xl font-bold">Tailwind CSS</h1>
-                    </div>
-                    <div className="description">
-                        <p className="text-sm">Tailwind CSS is good for health</p>
-                        <div className="flex items-center mb-5 justify-center">
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                        </div>
-                    </div>
-                </div> */}
             </div>
         </div>
         <div className="section-container">
