@@ -288,23 +288,29 @@ export default function Home(){
         </div>
         {/* contact me */}
         <div className="section-container">
-            <div className="bg-slate-800 m-5 p-5 rounded-lg ">
+            <div className="bg-slate-800 m-5 p-5 rounded-lg p-24">
                 <h1 className="text-center text-4xl p-5 font-bold">Subscribe for our newsletter </h1>
                 <p className="text-center mx-auto w-3/4 text-lg text-gray-500">
                 Do you want to get notified when a new article is published ? Sign up for our newsletter and you will be among the first to find out about new articles, courses and features.
                 </p>
-                <div className="flex justify-center items-center p-5 my-5">
-                    <form action="#" className="relative w-1/2 flex">
-                        <input type="text" className="subscribe-input" placeholder="Enter your Email"/>
-                        <div className="absolute top-4 left-4">
-                        <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
-                            <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
-                            <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
-                        </svg>
-                        </div>
-                        <button className="">Subscribe</button>
-                    </form>
-                    
+                <div className="pt-5">
+                    <div className="flex justify-center items-center ">
+                        <form action="#" className="relative xl:w-1/2 lg:w-1/2 sm:w-full md:w-full flex">
+                            <input type="text" className="subscribe-input" placeholder="Enter your Email"/>
+                            <div className="absolute top-4 left-4">
+                            <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                                <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+                                <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+                            </svg>
+                            </div>
+                            <button className="bg-gradient-to-r rounded-lg xl:px-3 lg:px-2 sm:px-1 rounded-l-none from-pink-500 to-rose-500">Subscribe</button>
+                        </form>
+                    </div>
+                    <div className="text-sm text-center text-gray-500">
+                        <p>We care about the protection of your data. Read our 
+                            <Link href="/" className="hover:text-cyan-500 duration-300"> Privacy Policy</Link>
+                        .</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -15,7 +15,7 @@
 }
 @layer components{
     .subscribe-input{
-        @apply  p-3.5 ps-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+        @apply  p-3.5 ps-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg rounded-r-none border border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
     }
 }
 @layer components{
