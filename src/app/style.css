@@ -105,12 +105,6 @@
     animation: fadeUp 1s ease 1;
 }
 
-.contact-holder1{
-    animation: slideRight 1.5s ease-in-out 1;
-}
-.contact-holder2{
-    animation: slideLeft 1.5s ease-in-out 1;
-}
 .card{
     position: relative;
     animation: fadeUp 2s ease-in-out 1;
@@ -118,13 +112,10 @@
 .image-container{
     animation: slideLeft 1.3s ease-in-out 1;
 }
-.info-container{
-    animation: slideRight 1.3s ease-in-out 1;
+.bio-graphy{
+    animation: slideUp 1.3s ease-in-out 1;
 }
-.progress-bar{
-    width: 67%;
-    animation: grow 2s ease-in-out 1;
-}
+
 .card .absolute-cover{
     position: absolute;
     top: 110%;
@@ -139,11 +130,22 @@
 .card:hover .blur-cover{
     filter: blur(5px);
 }
-@keyframes grow {
-    from {
-        width: 0%;
+
+
+.progressbar .progress-circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+
+    animation: grow-stroke 1.5s linear forwards;
+}
+@keyframes grow-stroke {
+    100%{
+        stroke-dashoffset: 255;
     }
-    to{
-        width: 67%;
-    }
+}
+.progressbar{
+    transform: rotate(180deg);
 }
