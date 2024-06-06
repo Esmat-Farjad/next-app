@@ -297,7 +297,7 @@ export default function Home(){
                     <form action="#" className="relative w-1/2 ">
                         <input type="text" className="form-input" placeholder="Enter your Email"/>
                         <span className="absolute"></span>
-                        <button className="inline bg-gradient-to-r from-rose-500 to-pink-500 p-2 rounded-lg absolute top-0 right-0 z-100 border-pink-500 border">Subscribe</button>
+                        <button className="inline bg-gradient-to-r from-rose-500 to-pink-500 p-2 rounded-lg absolute top-0 right-0 z-100 border-pink-500 border rounded-l-none">Subscribe</button>
                         <p className="text-center text-gray-500 mx-auto text-sm">We care about the protection of your data. Read our <Link href="/" className="hover:text-gray-300 duration-300">Privacy Policy.</Link></p>
                     </form>
                 </div>
