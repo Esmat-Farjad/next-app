@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 // icons
-import { FaFacebookF, FaTwitter, FaInstagram, FaGithub, FaStar, FaAngular, FaSass, FaNodeJs } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaGithub, FaStar, FaAngular, FaSass, FaNodeJs, FaNode } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import { TbClockCheck } from "react-icons/tb";
@@ -13,7 +13,20 @@ import { AiOutlineAntDesign, AiOutlineCloudServer, AiOutlineJavaScript, AiOutlin
 import { DiDjango } from "react-icons/di";
 
 export default function Home(){
-    const blogId = 100
+    const technology = [
+        {name:"Python", icon:<FaPython className='text-4xl inline fill-yellow-400'/>, text:"Versatile Programming Language for Everything", star:5},
+        {name:"React Js", icon:<RiReactjsFill className='text-4xl inline fill-cyan-500' />, text:"Cutting-edge front-end tools", star:5},
+        {name:"Next Js", icon:<RiNextjsFill className='text-4xl inline fill-white' />, text:"Seamless lightning-fast web development", star:5},
+        {name:"Node Js", icon:<FaNodeJs className='text-4xl inline fill-green-500' />, text:"JavaScript Runtime for Server-Side Development", star:5},
+        {name:"JavaScript", icon:<AiOutlineJavaScript className='text-4xl inline fill-yellow-400' />, text:"The Language of the Web", star:5},
+        {name:"PostgreSQL", icon:<SiPostgresql className='text-4xl inline fill-sky-500' />, text:"Relational Database Management System", star:5},
+        {name:"MySQL", icon:<SiMysql className='text-4xl inline fill-gray-400' />, text:"Open-Source Relational Database", star:5},
+        {name:"MongoDB", icon:<SiMongodb className='text-4xl inline fill-green-500' />, text:"NoSQL Database for Modern Applications", star:5},
+        {name:"Angular", icon:<FaAngular className='text-4xl inline fill-rose-600' />, text:"Frontend Framework for Dynamic Web Apps", star:5},
+        {name:"Django", icon:<DiDjango className='text-4xl inline fill-green-500' />, text:"High-Level Python Web Framework", star:5},
+        {name:"Sass", icon:<FaSass className='text-4xl inline fill-pink-600' />, text:"Syntactically Awesome Stylesheets", star:5},
+        {name:"Tailwind CSS", icon:<RiTailwindCssFill className='text-4xl inline fill-cyan-600' />, text:"Utility-First CSS Framework", star:5},
+    ]
     const carouselData = [
         {src: "/next.svg", alt:"skill", width:500, height:400},
         {src: "/vercel.svg",alt:"skill", width:500, height:400},
@@ -238,184 +251,30 @@ export default function Home(){
                 <span className="text-2xl p-3 font-bold">Skills and Experties</span>
                 <p className="pt-2"></p>
             </div>
-            <div className="grid xl:grid-cols-6 md:grid-cols-3 sm:grid-cols-1 gap-5 place-content-center">
-                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
-                    <div className="header">
-                        <span className="icon"><FaPython className="text-4xl inline fill-yellow-600"/></span>
-                        <h1 className="text-xl font-bold">Python</h1>
-                    </div>
-                    <div className="description">
-                        <p className="text-sm">python is good for health</p>
-                        <div className="flex items-center mb-5 justify-center">
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+            <div className="grid xl:grid-cols-6 md:grid-cols-3 sm:grid-cols-1 gap-2 place-content-center">
+                {technology.map((item, index) => {
+                    return (
+                        <div key={index} className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-3 text-center">
+                            <div className="header">
+                                <span className="icon">{item.icon}</span>
+                                <h1 className="text-xl font-bold">{item.name}</h1>
+                            </div>
+                            <div className="description">
+                                <p className="text-xs">{item.text}</p>
+                                <div className="flex items-center mb-5 justify-center">
+                                    {Array.from({length:item.star}).map((_, starIndex) =>(
+                                        <FaStar key={starIndex} className="fill-yellow-400 text-md m-0.5"/>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
-                    <div className="header">
-                        <span className="icon"><RiReactjsFill className="text-4xl inline fill-teal-500"/></span>
-                        <h1 className="text-xl font-bold">React Js</h1>
-                    </div>
-                    <div className="description">
-                        <p className="text-sm">React Js is good for health</p>
-                        <div className="flex items-center mb-5 justify-center">
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
-                    <div className="header">
-                        <span className="icon"><RiNextjsFill className="text-4xl inline fill-indigo-500"/></span>
-                        <h1 className="text-xl font-bold">Next Js</h1>
-                    </div>
-                    <div className="description">
-                        <p className="text-sm">Next Js is good for health</p>
-                        <div className="flex items-center mb-5 justify-center">
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
-                    <div className="header">
-                        <span className="icon"><FaNodeJs className="text-4xl inline fill-green-500"/></span>
-                        <h1 className="text-xl font-bold">Node Js</h1>
-                    </div>
-                    <div className="description">
-                        <p className="text-sm">Node Js is good for health</p>
-                        <div className="flex items-center mb-5 justify-center">
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
-                    <div className="header">
-                        <span className="icon"><AiOutlineJavaScript className="text-4xl inline fill-yellow-400"/></span>
-                        <h1 className="text-xl font-bold">JavaScript</h1>
-                    </div>
-                    <div className="description">
-                        <p className="text-sm">JavaScript is good for health</p>
-                        <div className="flex items-center mb-5 justify-center">
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
-                    <div className="header">
-                        <span className="icon"><SiPostgresql className="text-4xl inline fill-cyan-500"/></span>
-                        <h1 className="text-xl font-bold">PostgreSQL</h1>
-                    </div>
-                    <div className="description">
-                        <p className="text-sm">PostgreSQL is good for health</p>
-                        <div className="flex items-center mb-5 justify-center">
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
-                    <div className="header">
-                        <span className="icon"><SiMysql className="text-4xl inline fill-gray-500"/></span>
-                        <h1 className="text-xl font-bold">MySQL</h1>
-                    </div>
-                    <div className="description">
-                        <p className="text-sm">MySQL is good for health</p>
-                        <div className="flex items-center mb-5 justify-center">
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
-                    <div className="header">
-                        <span className="icon"><SiMongodb className="text-4xl inline fill-green-500"/></span>
-                        <h1 className="text-xl font-bold">MongoDB</h1>
-                    </div>
-                    <div className="description">
-                        <p className="text-sm">MongoDB is good for health</p>
-                        <div className="flex items-center mb-5 justify-center">
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-gray-500 text-md m-0.5"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
-                    <div className="header">
-                        <span className="icon"><FaAngular className="text-4xl inline fill-rose-600"/></span>
-                        <h1 className="text-xl font-bold">Angular</h1>
-                    </div>
-                    <div className="description">
-                        <p className="text-sm">Angular is good for health</p>
-                        <div className="flex items-center mb-5 justify-center">
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
-                    <div className="header">
-                        <span className="icon"><DiDjango className="text-4xl inline fill-teal-500"/></span>
-                        <h1 className="text-xl font-bold">Django</h1>
-                    </div>
-                    <div className="description">
-                        <p className="text-sm">Django is good for health</p>
-                        <div className="flex items-center mb-5 justify-center">
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
-                    <div className="header">
-                        <span className="icon"><FaSass className="text-4xl inline fill-pink-500"/></span>
-                        <h1 className="text-xl font-bold">Sass</h1>
-                    </div>
-                    <div className="description">
-                        <p className="text-sm">Sass is good for health</p>
-                        <div className="flex items-center mb-5 justify-center">
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
+                    );
+                })}
+                
+                {/* 
+                
+               
+                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-3 text-center">
                     <div className="header">
                         <span className="icon"><RiTailwindCssFill className="text-4xl inline fill-cyan-500"/></span>
                         <h1 className="text-xl font-bold">Tailwind CSS</h1>
@@ -430,7 +289,7 @@ export default function Home(){
                             <FaStar className="fill-yellow-400 text-md m-0.5"/>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
         <div className="section-container">
