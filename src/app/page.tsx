@@ -294,12 +294,17 @@ export default function Home(){
                 Do you want to get notified when a new article is published ? Sign up for our newsletter and you will be among the first to find out about new articles, courses and features.
                 </p>
                 <div className="flex justify-center items-center p-5 my-5">
-                    <form action="#" className="relative w-1/2 ">
-                        <input type="text" className="form-input" placeholder="Enter your Email"/>
-                        <span className="absolute"></span>
-                        <button className="inline bg-gradient-to-r from-rose-500 to-pink-500 p-2 rounded-lg absolute top-0 right-0 z-100 border-pink-500 border rounded-l-none">Subscribe</button>
-                        <p className="text-center text-gray-500 mx-auto text-sm">We care about the protection of your data. Read our <Link href="/" className="hover:text-gray-300 duration-300">Privacy Policy.</Link></p>
+                    <form action="#" className="relative w-1/2 flex">
+                        <input type="text" className="subscribe-input" placeholder="Enter your Email"/>
+                        <div className="absolute top-4 left-4">
+                        <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                            <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+                            <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+                        </svg>
+                        </div>
+                        <button className="">Subscribe</button>
                     </form>
+                    
                 </div>
             </div>
         </div>
