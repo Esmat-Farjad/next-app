@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 // icons
-import { FaFacebookF, FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaGithub, FaStar } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import { TbClockCheck } from "react-icons/tb";
@@ -9,6 +9,7 @@ import { MdOutlineMobileFriendly } from "react-icons/md";
 import { RiNextjsFill, RiReactjsFill } from "react-icons/ri";
 import { FaCode, FaPython, FaHeartCircleCheck } from "react-icons/fa6";
 import { AiOutlineAntDesign, AiOutlineCloudServer, AiOutlineJavaScript, AiOutlineSafety } from "react-icons/ai";
+
 export default function Home(){
     const blogId = 100
     const carouselData = [
@@ -234,6 +235,72 @@ export default function Home(){
             <div className="text-2xl text-center my-10">
                 <span className="text-2xl p-3 font-bold">Skills and Experties</span>
                 <p className="pt-2">We are professional in out career</p>
+            </div>
+            <div className="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-5 place-content-center">
+                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
+                    <div className="header">
+                        <span className="icon"><FaPython className="text-4xl inline fill-yellow-600"/></span>
+                        <h1 className="text-xl font-bold">Python</h1>
+                    </div>
+                    <div className="description">
+                        <p className="text-sm">python is good for health</p>
+                        <div className="flex items-center mb-5 justify-center">
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
+                    <div className="header">
+                        <span className="icon"><RiReactjsFill className="text-4xl inline fill-yellow-600"/></span>
+                        <h1 className="text-xl font-bold">React Js</h1>
+                    </div>
+                    <div className="description">
+                        <p className="text-sm">React Js is good for health</p>
+                        <div className="flex items-center mb-5 justify-center">
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
+                    <div className="header">
+                        <span className="icon"><RiNextjsFill className="text-4xl inline fill-yellow-600"/></span>
+                        <h1 className="text-xl font-bold">Next Js</h1>
+                    </div>
+                    <div className="description">
+                        <p className="text-sm">Next Js is good for health</p>
+                        <div className="flex items-center mb-5 justify-center">
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
+                    <div className="header">
+                        <span className="icon"><AiOutlineJavaScript className="text-4xl inline fill-yellow-600"/></span>
+                        <h1 className="text-xl font-bold">JavaScript</h1>
+                    </div>
+                    <div className="description">
+                        <p className="text-sm">JavaScript is good for health</p>
+                        <div className="flex items-center mb-5 justify-center">
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div className="section-container">
