@@ -1,14 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 // icons
-import { FaFacebookF, FaTwitter, FaInstagram, FaGithub, FaStar } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaGithub, FaStar, FaAngular, FaSass, FaNodeJs } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import { TbClockCheck } from "react-icons/tb";
 import { MdOutlineMobileFriendly } from "react-icons/md";
-import { RiNextjsFill, RiReactjsFill } from "react-icons/ri";
+import { RiNextjsFill, RiReactjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { FaCode, FaPython, FaHeartCircleCheck } from "react-icons/fa6";
+import { SiMongodb, SiMysql, SiPostgresql } from "react-icons/si";
 import { AiOutlineAntDesign, AiOutlineCloudServer, AiOutlineJavaScript, AiOutlineSafety } from "react-icons/ai";
+import { DiDjango } from "react-icons/di";
 
 export default function Home(){
     const blogId = 100
@@ -231,12 +233,12 @@ export default function Home(){
             </div>
         </div>
 
-        <div className="section-container">
+        <div className="section-container p-10">
             <div className="text-2xl text-center my-10">
                 <span className="text-2xl p-3 font-bold">Skills and Experties</span>
-                <p className="pt-2">We are professional in out career</p>
+                <p className="pt-2"></p>
             </div>
-            <div className="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-5 place-content-center">
+            <div className="grid xl:grid-cols-6 md:grid-cols-3 sm:grid-cols-1 gap-5 place-content-center">
                 <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
                     <div className="header">
                         <span className="icon"><FaPython className="text-4xl inline fill-yellow-600"/></span>
@@ -255,7 +257,7 @@ export default function Home(){
                 </div>
                 <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
                     <div className="header">
-                        <span className="icon"><RiReactjsFill className="text-4xl inline fill-yellow-600"/></span>
+                        <span className="icon"><RiReactjsFill className="text-4xl inline fill-teal-500"/></span>
                         <h1 className="text-xl font-bold">React Js</h1>
                     </div>
                     <div className="description">
@@ -271,7 +273,7 @@ export default function Home(){
                 </div>
                 <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
                     <div className="header">
-                        <span className="icon"><RiNextjsFill className="text-4xl inline fill-yellow-600"/></span>
+                        <span className="icon"><RiNextjsFill className="text-4xl inline fill-indigo-500"/></span>
                         <h1 className="text-xl font-bold">Next Js</h1>
                     </div>
                     <div className="description">
@@ -287,11 +289,139 @@ export default function Home(){
                 </div>
                 <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
                     <div className="header">
-                        <span className="icon"><AiOutlineJavaScript className="text-4xl inline fill-yellow-600"/></span>
+                        <span className="icon"><FaNodeJs className="text-4xl inline fill-green-500"/></span>
+                        <h1 className="text-xl font-bold">Node Js</h1>
+                    </div>
+                    <div className="description">
+                        <p className="text-sm">Node Js is good for health</p>
+                        <div className="flex items-center mb-5 justify-center">
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
+                    <div className="header">
+                        <span className="icon"><AiOutlineJavaScript className="text-4xl inline fill-yellow-400"/></span>
                         <h1 className="text-xl font-bold">JavaScript</h1>
                     </div>
                     <div className="description">
                         <p className="text-sm">JavaScript is good for health</p>
+                        <div className="flex items-center mb-5 justify-center">
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
+                    <div className="header">
+                        <span className="icon"><SiPostgresql className="text-4xl inline fill-cyan-500"/></span>
+                        <h1 className="text-xl font-bold">PostgreSQL</h1>
+                    </div>
+                    <div className="description">
+                        <p className="text-sm">PostgreSQL is good for health</p>
+                        <div className="flex items-center mb-5 justify-center">
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
+                    <div className="header">
+                        <span className="icon"><SiMysql className="text-4xl inline fill-gray-500"/></span>
+                        <h1 className="text-xl font-bold">MySQL</h1>
+                    </div>
+                    <div className="description">
+                        <p className="text-sm">MySQL is good for health</p>
+                        <div className="flex items-center mb-5 justify-center">
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
+                    <div className="header">
+                        <span className="icon"><SiMongodb className="text-4xl inline fill-green-500"/></span>
+                        <h1 className="text-xl font-bold">MongoDB</h1>
+                    </div>
+                    <div className="description">
+                        <p className="text-sm">MongoDB is good for health</p>
+                        <div className="flex items-center mb-5 justify-center">
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-gray-500 text-md m-0.5"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
+                    <div className="header">
+                        <span className="icon"><FaAngular className="text-4xl inline fill-rose-600"/></span>
+                        <h1 className="text-xl font-bold">Angular</h1>
+                    </div>
+                    <div className="description">
+                        <p className="text-sm">Angular is good for health</p>
+                        <div className="flex items-center mb-5 justify-center">
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
+                    <div className="header">
+                        <span className="icon"><DiDjango className="text-4xl inline fill-teal-500"/></span>
+                        <h1 className="text-xl font-bold">Django</h1>
+                    </div>
+                    <div className="description">
+                        <p className="text-sm">Django is good for health</p>
+                        <div className="flex items-center mb-5 justify-center">
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
+                    <div className="header">
+                        <span className="icon"><FaSass className="text-4xl inline fill-pink-500"/></span>
+                        <h1 className="text-xl font-bold">Sass</h1>
+                    </div>
+                    <div className="description">
+                        <p className="text-sm">Sass is good for health</p>
+                        <div className="flex items-center mb-5 justify-center">
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                            <FaStar className="fill-yellow-400 text-md m-0.5"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="grid-cols-1 rounded border-gray-600 hover:border duration-300 p-5 text-center">
+                    <div className="header">
+                        <span className="icon"><RiTailwindCssFill className="text-4xl inline fill-cyan-500"/></span>
+                        <h1 className="text-xl font-bold">Tailwind CSS</h1>
+                    </div>
+                    <div className="description">
+                        <p className="text-sm">Tailwind CSS is good for health</p>
                         <div className="flex items-center mb-5 justify-center">
                             <FaStar className="fill-yellow-400 text-md m-0.5"/>
                             <FaStar className="fill-yellow-400 text-md m-0.5"/>
