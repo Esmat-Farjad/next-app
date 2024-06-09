@@ -39,13 +39,13 @@ export default function Login(){
                 <span>to continue to your account please sign in</span>
             </div>
             <form action="#" className="my-10 login-form flex flex-col justify-center items-center">
-                <div className=" grid w-1/4">
+                <div className="mb-5 grid w-1/4">
                     <label htmlFor="username" className="">username</label>
                     <input type="text" className=" form-input" placeholder="username"/>
                     <label htmlFor="password" className=" mt-3">username</label>
                     <input type="password" className="form-input" placeholder="password" />
                 </div>
-                <button className="btn-transparent">Sign in</button>
+                <button className="btn-transparent mt-5">Sign in</button>
                 <div className="mt-5">
                     <p>please accept 
                     <Link href="./register" className="ms-2 text-blue-300 hover:text-blue-500">privacy & policy of use</Link> 
