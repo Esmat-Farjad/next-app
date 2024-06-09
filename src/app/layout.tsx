@@ -42,7 +42,7 @@ export default function RootLayout({
                   href={link.href} 
                   key={link.name} 
                   className={isActive ? "font-bold m-4" : "text-slate-200 m-4"}>
-                    {link.name} 
+                    {link.authenticate ? '' : link.name} 
                   </Link> 
                 
                 

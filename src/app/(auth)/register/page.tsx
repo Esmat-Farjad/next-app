@@ -40,10 +40,10 @@ export default function Register(){
                 </div>
                 <div className="mt-5">
                     <p>by registering yourself you will be agree to the  
-                    <Link href="./register" className="ms-2 text-blue-300 hover:text-blue-500">privacy & policy of use</Link> 
+                    <Link href="./register" className="ms-2 text-gray-600 hover:text-white duration-500">privacy & policy of use</Link> 
                     </p>
                     <p>already have account ? 
-                        <Link href="./login" className="ms-2 hover:text-sky-400 text-sky-300">Sign in</Link> 
+                        <Link href="./login" className="ms-2 text-gray-600 hover:text-white duration-300">Sign in</Link> 
                     </p>
                     
                 </div>
