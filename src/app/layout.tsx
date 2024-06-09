@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
+import { CiMenuKebab } from "react-icons/ci";
 
 
 // export const metadata: Metadata = {
@@ -36,7 +37,10 @@ export default function RootLayout({
         <header className="">
           <div className="xl:mx-44 lg:mx-44 sm:mx-16 md:mx-16 py-5">
             <Link href="/" className="font-bold text-2xl inline mr-4">Navbar</Link>
-              <ul className="xl:inline-block lg:inline-inline-block sm:block md:block">
+            <p className="text-end text-2xl float-right px-5 xl:hidden lg:hidden sm:inline-block md:inline-block">
+              <Link href="#" className="nav-link"><CiMenuKebab/></Link>
+            </p>
+              <ul className="xl:inline-block lg:inline-block sm:hidden md:hidden">
                   {navLink.map((link) => {const isActive = pathname.startsWith(link.href);
                   return (
                     <li key={link.name} className="xl:inline-block lg:inline-inline-block sm:block md:block">
