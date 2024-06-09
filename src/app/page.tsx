@@ -27,11 +27,38 @@ export default function Home(){
         {name:"Sass", icon:<FaSass className='text-4xl inline fill-pink-600' />, text:"Syntactically Awesome Stylesheets", star:5},
         {name:"Tailwind CSS", icon:<RiTailwindCssFill className='text-4xl inline fill-cyan-600' />, text:"Utility-First CSS Framework", star:5},
     ]
-    const carouselData = [
-        {src: "/next.svg", alt:"skill", width:500, height:400},
-        {src: "/vercel.svg",alt:"skill", width:500, height:400},
+    const posts = [
+        {
+            title:"Trending Technology", 
+            text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ultrices nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst. ", 
+            pic:"/next.svg", 
+            created_at:"24-04-2024"
+        },
+        {
+            title:"Trending Technology", 
+            text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ultrices nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst. ", 
+            pic:"/next.svg", 
+            created_at:"24-04-2024"
+        },
+        {
+            title:"Trending Technology", 
+            text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ultrices nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst. ", 
+            pic:"/next.svg", 
+            created_at:"24-04-2024"},
+        {
+            title:"Trending Technology", 
+            text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ultrices nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst. ", 
+            pic:"/next.svg", 
+            created_at:"24-04-2024"
+        },
+        {
+            title:"Trending Technology", 
+            text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ultrices nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst. ", 
+            pic:"/next.svg", 
+            created_at:"24-04-2024"
+        },
     ]
-   
+
     return (<>
         <div className="heading-container px-10 pt-10 bg-white h-100 bg-gradient-to-b from-indigo-900 to-pink-800 ">
            <p className="header-text text-white text-6xl font-bold text-center mt-10 pt-10 ">Welcome to my Portfolio</p>
@@ -113,7 +140,7 @@ export default function Home(){
          <div className="services-section section-container">
             <div className="my-10 text-center">
                 <p className="text-2xl font-bold">Services</p>
-                <span className="">services provided for you</span>
+                <span className="text-sm">services provided for you</span>
             </div>
             <div className="grid xl:grid-cols-3 sm:grid-cols-1 md:grid-cols-1 gap-5">
                 <div className="p-5 rounded border-slate-600 hover:border duration-300">
@@ -170,9 +197,9 @@ export default function Home(){
          <div className="section-container">
             <div className="text-2xl text-center my-10">
                 <span className="text-2xl p-3 font-bold">Latest Project</span>
-                <p className="pt-2">this projects are completed or under development</p>
+                <p className="pt-2 text-sm">this projects are completed or under development</p>
             </div>
-            <div className="grid xl:grid-cols-4 sm:grid-cols-1 md:grid-cols-1 gap-5">
+            <div className="grid xl:grid-cols-5 sm:grid-cols-1 md:grid-cols-1 gap-5">
                 <div className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 border border-slate-600 rounded overflow-hidden card">
                     <div className="blur-cover">
                         <Image src="/project.avif" alt="photo" width={400} height={280}></Image>
@@ -247,9 +274,9 @@ export default function Home(){
         </div>
 
         <div className="section-container p-10">
-            <div className="text-2xl text-center my-10">
+            <div className="text-center my-10">
                 <span className="text-2xl p-3 font-bold">Skills and Experties</span>
-                <p className="pt-2">We possess expertise in a diverse range of technologies within our professional domain</p>
+                <p className="pt-2 text-sm">We possess expertise in a diverse range of technologies within our professional domain</p>
             </div>
             <div className="grid xl:grid-cols-6 md:grid-cols-3 sm:grid-cols-1 gap-2 place-content-center">
                 {technology.map((item, index) => {
@@ -271,6 +298,38 @@ export default function Home(){
                     );
                 })}
             </div>
+        </div>
+        <div className="section-container">
+            <div className="text-center my-10">
+                <p className="text-2xl font-bold p-3">Posts</p>
+                <p className="pt-2 text-sm">We possess expertise in a diverse range of technologies within our professional domain</p>
+            </div>
+            <div className="grid xl:grid-cols-5 sm:grid-cols-1 md:grid-cols-1 gap-5">
+                {posts.map((post, index) => {
+                    return (
+                        <div key={index} className="xl:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 border border-slate-600 rounded overflow-hidden card">
+                            <div className="blur-cover">
+                                <Image src={post.pic} alt="photo" width={400} height={280}></Image>
+                                <div className="text-start p-3">
+                                    <h1 className="font-bold mb-2">{post.title}</h1>
+                                    <h4 className="text-sm">{post.text}</h4>
+                                </div>
+                                <small className="text-gray-600 p-3">
+                                    <span className="font-bold mr-2 animate-pluse">updated at:</span> 
+                                    {post.created_at}
+                                </small>
+                            </div>
+                            <div className="absolute-cover flex justify-center items-center ">
+                                <Link href="/blog" className="text-sm px-3 py-1 text-white border border-pink-500 rounded-full bg-pink-500 z-50">
+                                    Learn more...
+                                </Link>
+                            </div>
+                        </div>
+                    );
+                })}
+                
+            </div>
+
         </div>
         <div className="section-container">
             <div className="bg-slate-800 m-5 rounded-lg p-20">
