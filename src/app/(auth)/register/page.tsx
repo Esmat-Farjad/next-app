@@ -25,16 +25,16 @@ export default function Register(){
             <form action="#" className="flex flex-col justify-center items-center relative">
                 <div className="grid w-1/4">
                     <label htmlFor="full-name" className="block mt-4">Full name</label>
-                    <input type="text" className="form-input w-100" id="full-name" />
+                    <input type="text" className="form-input w-100" id="full-name" placeholder=" full name" />
                     <label htmlFor="email" className="block mt-4">Email</label>
-                    <input type="email" className="form-input w-100" id="email"/>
+                    <input type="email" className="form-input w-100" id="email" placeholder="example@gmail.com..."/>
                     <label htmlFor="password" className="block mt-4">password</label>
-                    <input type="password" className="form-input w-100" id="password"/>
+                    <input type="password" className="form-input w-100" id="password" placeholder="password"/>
                     <label htmlFor="confirm-password" className="block mt-4">confirm password</label>
-                    <input type="password" className="form-input w-100" id="confirm-password"/>
+                    <input type="password" className="form-input w-100" id="confirm-password" placeholder="Re-enter your password"/>
                     
                 </div>
-                <span className="eye-icon"><FaEyeSlash/></span>
+               
                 <div className="grid my-10">
                     <button type="submit" className="btn-transparent">Sign Up</button>
                 </div>
