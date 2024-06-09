@@ -48,11 +48,13 @@ export default function Login(){
                 <button className="btn-transparent mt-5">Sign in</button>
                 <div className="mt-5">
                     <p>please accept 
-                    <Link href="./register" className="ms-2 text-blue-300 hover:text-blue-500">privacy & policy of use</Link> 
+                    <Link href="./register" className="ms-2 text-gray-600 hover:text-white">privacy & policy of use</Link> 
                     </p>
                     <p>Do not have an account ? 
-                        <Link href="./register" className="ms-2 hover:text-sky-400 underline">lets create one</Link> 
-                        <p className="text-center"><Link href="./forgot-password" className="text-red-500">forgot password?</Link></p>
+                        <Link href="./register" className="ms-2 hover:text-white duration-300 text-gray-600">lets create one</Link> 
+                        <p className="text-center">
+                            <Link href="./forgot-password" className="text-gray-600 hover:text-white duration-300">forgot password?</Link>
+                        </p>
                     </p>
                     
                 </div>

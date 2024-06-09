@@ -9,7 +9,7 @@ import { useState } from "react";
 const navLink = [
     {name: "Register", href:"/register"},
     {name: "Login", href: "/login"},
-    {name: "Forgot Password", href: "/forgot-password"},
+   
 ];
 
 export default function AuthLayout({
@@ -29,7 +29,7 @@ export default function AuthLayout({
             {/* mapping through nav link object and adding the link.href for each item of the navLink object */}
             {navLink.map((link) => {const isActive = pathname.startsWith(link.href);
                 return (
-                    <Link href={link.href} key={link.name} className={isActive ? "font-bold m-4" : "text-blue-500 m-4"}>{link.name} </Link>
+                    <Link href={link.href} key={link.name} className={isActive ? "font-bold m-4" : "text-gray-600 hover:text-white duration-300 m-4"}>{link.name} </Link>
                 );
             })}
             {children}
