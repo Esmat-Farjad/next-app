@@ -320,7 +320,7 @@ export default function Home(){
                                 </small>
                             </div>
                             <div className="absolute-cover flex justify-center items-center ">
-                                <Link href="/blog" className="text-sm px-3 py-1 text-white border border-pink-500 rounded-full bg-pink-500 z-50">
+                                <Link href="/blog" className="text-sm px-3 py-1 text-white border border-pink-500 animate-pulse rounded-full bg-pink-500 z-50">
                                     Learn more...
                                 </Link>
                             </div>

@@ -6,7 +6,7 @@ export const metadata = {
 export default function Blog(){
     return (<>
         <div className="section-container">
-            <div className="text-center">
+            <div className="text-center my-10">
                 <p className="text-2xl font-bold">Post Title</p>
                 <p className="text-sm">post descriptions</p>
             </div>
@@ -16,13 +16,14 @@ export default function Blog(){
                         <Image src="/next.svg" alt="post image" width={400} height={400}></Image>
                     </div>
                 </div>
-                <div className="xl:col-span-3 sm:grid-cols-1 post-descriptions ">
+                <div className="xl:col-span-3 sm:grid-cols-1 post-descriptions h-48">
                     <div className="border border-gray-600 rounded p-5 animate-pulse">
-                        <p className="text-xl h-2 bg-gray-600 font-bold rounded"></p>
-                        <p className="text-sm h-1 bg-gray-600 rounded ms-1 mt-5"></p>
-                        <p className="text-sm h-1 bg-gray-600 rounded m-1"></p>
-                        <p className="text-sm h-1 bg-gray-600 rounded m-1"></p>
-                        <p className="text-sm h-1 bg-gray-600 rounded m-1"></p>
+                        <p className="text-xl h-5 bg-gray-600 font-bold rounded"></p>
+                        <p className="text-sm h-2 bg-gray-600 rounded ms-1 mt-5"></p>
+                        <p className="text-sm h-2 bg-gray-600 rounded m-1"></p>
+                        <p className="text-sm h-2 bg-gray-600 rounded m-1"></p>
+                        <p className="text-sm h-2 bg-gray-600 rounded m-1"></p>
+                        <p className="text-sm h-2 bg-gray-600 rounded mt-5"></p>
                     </div>
                 </div>
             </div>

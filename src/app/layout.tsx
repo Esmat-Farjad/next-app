@@ -53,8 +53,9 @@ export default function RootLayout({
         <div className="border-t border-gray-600 p-5">
           <div className="text-center text-gray-600 hover:text-white duration-300">
             <div className="">
-              <span className="text-xl">&#169;  </span>
-              2024 portfolio all right reserved
+              <p className="text-xl">&#169;  
+                2024 portfolio all right reserved
+              </p>
             </div>
           </div>
           <div className="py-3 pr-3 text-center text-gray-600">
