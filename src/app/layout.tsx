@@ -33,21 +33,29 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={"bg-slate-900 bg-blend-darken text-white relative"}>
-        <header className={"mx-20 px-10 py-4"}>
-          <Link href="/" className={"font-bold text-2xl"}>Navbar</Link>
-            {navLink.map((link) => {const isActive = pathname.startsWith(link.href);
-              return (
+        <header className="">
+          <div className="xl:mx-44 lg:mx-44 sm:mx-16 md:mx-16 py-5">
+            <Link href="/" className="font-bold text-2xl inline mr-4">Navbar</Link>
+              <ul className="xl:inline-block lg:inline-inline-block sm:block md:block">
                 
-                  <Link 
-                  href={link.href} 
-                  key={link.name} 
-                  className={isActive ? "font-bold m-4" : "text-slate-200 m-4"}>
-                    {link.authenticate ? '' : link.name} 
-                  </Link> 
+                  {navLink.map((link) => {const isActive = pathname.startsWith(link.href);
+                  return (
+                    <li key={link.name} className="xl:inline-block lg:inline-inline-block sm:block md:block">
+                        <Link 
+                        href={link.href} 
+                        className={isActive ? "font-bold mx-2" : "mx-2 sm:block xl:d-inline nav-link "}>
+                          {link.authenticate ? '' : link.name} 
+                        </Link> 
+                      </li>
+                  );
+                })}
                 
-                
-              );
-            })}
+              </ul>
+              
+          
+            
+          </div>
+        
         </header>
        
         {children}
