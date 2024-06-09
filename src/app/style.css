@@ -43,6 +43,11 @@
         @apply xl:mx-44 lg:mx-44 sm:mx-16 md:mx-16 xl:my-20 lg:my-20 sm:my-10 md:my-10;
     }
 }
+@layer components{
+    .nav-link{
+        @apply text-gray-400 hover:text-white duration-300;
+    }
+}
 .eye-icon{
     position: absolute;
     top: 37.8%;
