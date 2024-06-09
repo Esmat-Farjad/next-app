@@ -37,7 +37,6 @@ export default function RootLayout({
           <div className="xl:mx-44 lg:mx-44 sm:mx-16 md:mx-16 py-5">
             <Link href="/" className="font-bold text-2xl inline mr-4">Navbar</Link>
               <ul className="xl:inline-block lg:inline-inline-block sm:block md:block">
-                
                   {navLink.map((link) => {const isActive = pathname.startsWith(link.href);
                   return (
                     <li key={link.name} className="xl:inline-block lg:inline-inline-block sm:block md:block">
@@ -46,16 +45,11 @@ export default function RootLayout({
                         className={isActive ? "font-bold mx-2" : "mx-2 sm:block xl:d-inline nav-link "}>
                           {link.authenticate ? '' : link.name} 
                         </Link> 
-                      </li>
+                    </li>
                   );
                 })}
-                
               </ul>
-              
-          
-            
           </div>
-        
         </header>
        
         {children}
