@@ -1,10 +1,11 @@
+"use client"
 import Card from "@/components/card";
 import { useState } from "react";
 
 export default function Login() {
     const [pwdInput, setPassword] = useState('');
     return <Card>
-            <form action="#" method="post">
+            <form action="/dashboard" method="post">
                 <label htmlFor="pin" className="block text-center my-5">Enter your passcode </label>
                 <input 
                 type="password" 

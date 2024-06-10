@@ -16,7 +16,7 @@ export default function DashboardLayout(
     }
 ){
     
-    const isLoggedIn = login;
+    const isLoggedIn = false;
     return isLoggedIn ?(
         <div>
         <div>{children}</div>
