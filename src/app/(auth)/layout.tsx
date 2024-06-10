@@ -27,11 +27,12 @@ export default function AuthLayout({
                 {/* <input value={input} onChange={e => setInput(e.target.value)} /> */}
             </div>
             {/* mapping through nav link object and adding the link.href for each item of the navLink object */}
-            {navLink.map((link) => {const isActive = pathname.startsWith(link.href);
+            {/* {navLink.map((link) => {const isActive = pathname.startsWith(link.href);
                 return (
-                    <Link href={link.href} key={link.name} className={isActive ? "font-bold m-4" : "text-gray-600 hover:text-white duration-300 m-4"}>{link.name} </Link>
+
+                    <Link href={link.href} key={link.name} className={isActive ? "font-bold m-4" : "anchor-link m-4"}>{link.name} </Link>
                 );
-            })}
+            })} */}
             {children}
         </div>
     )

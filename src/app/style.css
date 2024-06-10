@@ -48,6 +48,11 @@
         @apply text-gray-400 hover:text-white duration-300;
     }
 }
+@layer components{
+    .anchor-link{
+        @apply text-gray-600 hover:text-white duration-300;
+    }
+}
 .eye-icon{
     position: absolute;
     top: 37.8%;
