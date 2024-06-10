@@ -1,3 +1,5 @@
+
+
 export default function DashboardLayout(
     {
         children,
@@ -13,7 +15,8 @@ export default function DashboardLayout(
         login: React.ReactNode;
     }
 ){
-    const isLoggedIn = true;
+    
+    const isLoggedIn = login;
     return isLoggedIn ?(
         <div>
         <div>{children}</div>
