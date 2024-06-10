@@ -1,6 +1,7 @@
 
 import Link from "next/link";
 import { FaCircleCheck } from "react-icons/fa6";
+import { GoChevronRight } from "react-icons/go";
 import { IoCloseCircle } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 
