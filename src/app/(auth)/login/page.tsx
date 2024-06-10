@@ -50,13 +50,12 @@ export default function Login(){
                     <p>please accept 
                     <Link href="./register" className="ms-2 text-gray-600 hover:text-white">privacy & policy of use</Link> 
                     </p>
-                    <p>Do not have an account ? 
+                    <div>Do not have an account ? 
                         <Link href="./register" className="ms-2 hover:text-white duration-300 text-gray-600">lets create one</Link> 
                         <p className="text-center">
                             <Link href="./forgot-password" className="text-gray-600 hover:text-white duration-300">forgot password?</Link>
                         </p>
-                    </p>
-                    
+                    </div>
                 </div>
             </form>
         </div>
