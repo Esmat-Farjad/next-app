@@ -58,6 +58,26 @@ export default function Home(){
             created_at:"24-04-2024"
         },
     ]
+    const serviceData = [
+        {
+            id:"1",
+            title: "Software Development",
+            icon: <FaCode className="inline"/>,
+            description: "Unlock your vision with our bespoke software solutions. Explore our expert software development services today!",
+        },
+        {
+            id:"2",
+            title: "Software Solutions",
+            icon: <AiOutlineCloudServer className="inline"/>,
+            description:  "Elevate your business with our tailored software solutions. Discover how our services can streamline your operations today!", 
+        },
+        {
+            id:"3",
+            title: "UX & UI",
+            icon: <AiOutlineAntDesign className="inline"/>,
+            description: "Crafting unforgettable user experiences starts here. Explore our top-tier UX/UI design services today!",
+        }
+    ]
 
     return (<>
         <div className="heading-container px-10 pt-10 bg-white h-100 bg-gradient-to-b from-indigo-900 to-pink-800 ">
@@ -136,61 +156,28 @@ export default function Home(){
                 </div>
             </div>
         </div>
-
          <div className="services-section section-container">
             <div className="my-10 text-center">
                 <p className="text-2xl font-bold">Services</p>
                 <span className="text-sm">services provided for you</span>
             </div>
             <div className="grid xl:grid-cols-3 sm:grid-cols-1 md:grid-cols-1 gap-5">
-                <div className="p-5 rounded border-slate-600 hover:border duration-300">
-                    <p className="font-bold capitalize">
-                        <span className="text-2xl mr-2"><FaCode className="inline"/></span>
-                        <span className="text-xl">[service name]</span>
-                    </p>
-                    <p className="pl-8">
-                        <span className="text-sm">
-                        Donec ac ex et diam eleifend molestie.
-                        Vestibulum auctor rutrum viverra. Suspendisse pulvinar vehicula auctor. 
-                        Phasellus sed pretium arcu. 
-                        </span>
-                    </p>
-                    <p className="text-xsm text-cyan-500 hover:font-bold duration-300 pl-8 my-2">
-                        <Link href="/">learn more...</Link>
-                    </p>
-                </div>
-                <div className="p-5 rounded border-slate-600 hover:border duration-300">
-                    <p className="font-bold capitalize">
-                        <span className="text-2xl mr-2"><AiOutlineCloudServer className="inline"/></span>
-                        <span className="text-xl">[service name]</span>
-                    </p>
-                    <p className="pl-8">
-                        <span className="text-sm">
-                        Donec ac ex et diam eleifend molestie.
-                        Vestibulum auctor rutrum viverra. Suspendisse pulvinar vehicula auctor. 
-                        Phasellus sed pretium arcu. 
-                        </span>
-                    </p>
-                    <p className="text-xsm text-cyan-500 hover:font-bold duration-300 pl-8 my-2">
-                        <Link href="/">learn more...</Link>
-                    </p>
-                </div>
-                <div className="p-5 rounded border-slate-600 hover:border duration-300">
-                    <p className="font-bold capitalize">
-                        <span className="text-2xl mr-2"><AiOutlineAntDesign className="inline"/></span>
-                        <span className="text-xl">[service name]</span>
-                    </p>
-                    <p className="pl-8">
-                        <span className="text-sm">
-                        Donec ac ex et diam eleifend molestie.
-                        Vestibulum auctor rutrum viverra. Suspendisse pulvinar vehicula auctor. 
-                        Phasellus sed pretium arcu. 
-                        </span>
-                    </p>
-                    <p className="text-xsm text-cyan-500 hover:font-bold duration-300 pl-8 my-2">
-                        <Link href="/">learn more...</Link>
-                    </p>
-                </div>
+                {serviceData.map((service, index) =>{
+                    return (
+                        <div key={index} className="p-5 rounded border-slate-600 hover:border duration-300">
+                            <p className="font-bold capitalize">
+                                <span className="text-2xl mr-2">{service.icon}</span>
+                                <span className="text-xl">{service.title}</span>
+                            </p>
+                            <p className="pl-8">
+                                <span className="text-sm">{service.description}</span>
+                            </p>
+                            <p className="text-xsm text-cyan-500 hover:font-bold duration-300 pl-8 my-2">
+                                <Link href={`/${service.id}`}>learn more...</Link>
+                            </p>
+                        </div>
+                    );
+                })}
             </div>
         </div>
      
