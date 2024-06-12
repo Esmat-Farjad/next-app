@@ -13,10 +13,10 @@ export default function ServicePage(
         const photo: ServiceType = serviceData.find((p) => p.id === id) !;
     return <div>
         <div className="section-container">
-            <div className="grid xl:grid-cols-3 sm:grid-cols-1 gap-3">
-                <div className="">
+            <div className="grid xl:grid-cols-6 sm:grid-cols-1 gap-3">
+                <div className="col-span-2">
                     <ul>
-                        <li className="my-1">
+                        <li className="my-2">
                             <div className="flex">
                                 <div className="p-2">
                                     <PiTrophy className="text-3xl"/>
@@ -27,7 +27,7 @@ export default function ServicePage(
                                 </div>
                             </div>
                         </li>
-                        <li className="my-1">
+                        <li className="my-2">
                             <div className="flex">
                                 <div className="p-2">
                                     <LiaAwardSolid className="text-3xl"/>
@@ -38,7 +38,7 @@ export default function ServicePage(
                                 </div>
                             </div>
                         </li>
-                        <li className="my-1">
+                        <li className="my-2">
                             <div className="flex">
                                 <div className="p-2">
                                     <IoBriefcaseOutline className="text-3xl"/>
@@ -51,7 +51,7 @@ export default function ServicePage(
                                 </div>
                             </div>
                         </li>
-                        <li className="my-1">
+                        <li className="my-2">
                             <div className="flex">
                                 <div className="p-2">
                                     <PiUsers className="text-3xl"/>
@@ -64,7 +64,22 @@ export default function ServicePage(
                         </li>
                     </ul>
                 </div>
-                <div className="">
+                <div className="col-span-3">
+                    <div className="flex bg-gray-700">
+                        <div className="">
+                            <Image src={photo.src} alt={photo.title} width={400}></Image>
+                        </div>
+                        <div className="p-3">
+                            <h1 className="text-xl font-bold">Talk to the solution team</h1>
+                            <p className="my-2">
+                                Get your question answered by our 
+                                <span className="font-bold">consultants, architects, and project managers, </span>
+                                 bypassing the usual sales pitch.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="grid-cols-1">
                     <p className="text-2xl font-bold">{photo.title}</p>
                     <p className="">{photo.description}</p>
                 </div>
