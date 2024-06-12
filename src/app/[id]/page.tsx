@@ -166,12 +166,10 @@ export default function ServicePage(
             </div>
         </div>
         <div className="section-container">
-            <div className="heading">
-                <p className="text-4xl font-bold">{photo.title}
-                </p>
+            <div className="mb-10">
+                <p className="text-2xl font-bold">{photo.title}</p>
                 <p className="">{photo.description}</p>
             </div>
-
         <div className="grid xl:grid-cols-3 sm:grid-cols-1 my-5 gap-3">
             <div className="grid-cols-1 bg-slate-800 pb-5 px-3">
                 <div className="flex justify-center items-center">
