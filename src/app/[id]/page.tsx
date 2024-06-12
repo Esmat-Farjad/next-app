@@ -1,11 +1,13 @@
 import serviceData, { ServiceType } from "../service";
 import Image from "next/image";
 import Link from "next/link";
-import { PiTrophy, PiUsers } from "react-icons/pi";
+import { PiMicrophone, PiMicrophoneStageFill, PiTrophy, PiUsers } from "react-icons/pi";
 import { LiaAwardSolid } from "react-icons/lia";
-import { IoBriefcaseOutline } from "react-icons/io5";
+import { IoBriefcaseOutline, IoDocumentText} from "react-icons/io5";
 import { FiUploadCloud } from "react-icons/fi";
 import { IoIosCall } from "react-icons/io";
+import { HiOutlineMail } from "react-icons/hi";
+import { RiWhatsappFill } from "react-icons/ri";
 export default function ServicePage(
     {
         params:{id},
@@ -125,21 +127,45 @@ export default function ServicePage(
                     </div>
                 </div>
                 <div className="grid-cols-1">
-                    <div className="bg-gradient-to-b from-gray-600 to-gray-500 p-5">
+                    <div className="bg-gradient-to-b from-gray-600 to-gray-500 p-3">
                         <h1 className="font-bold">Our Contacts</h1>
-                        <ul>
-                            <li>
+                        <ul className="my-5 font-light">
+                            <li className="mb-5">
                                 <span className="bg-cyan-500 pb-1 px-1 rounded-full">
-                                <IoIosCall className="inline text-sm"/>
-                                </span>
+                                <IoIosCall className="inline text-xs"/> 
+                                </span> +93748621879
+                            </li>
+                            <li className="mb-5">
+                                <span className="bg-cyan-500 pb-1 px-1 rounded-full">
+                                <HiOutlineMail className="inline text-xs"/> 
+                                </span> info@webservices.Company
+                            </li>
+                            <li className="mb-5">
+                                <span className="">
+                                <RiWhatsappFill className="text-green-400 inline text-2xl"/> 
+                                </span> +919067698909
                             </li>
                         </ul>
+                        <div className="py-3">
+                            <h1 className="font-bold py-1">For Developer</h1>
+                            <span className="bg-cyan-500 px-1 pb-1 rounded-full">
+                                <PiMicrophoneStageFill className="text-xs inline"/>
+                            </span> 
+                            <span className="font-light ml-1">Get Uinque Insights</span>
+                        </div>
+                        <div className="py-3">
+                            <h1 className="font-bold py-1">Join Our Team</h1>
+                            <span className="bg-cyan-500 px-1 pb-1 rounded-full">
+                                <IoDocumentText className="text-xs inline"/>
+                            </span> 
+                            <span className="font-light ml-1">Upload your CV</span>
+                        </div>
                     </div>
                     
                 </div>
             </div>
             <p className="text-2xl font-bold">{photo.title}</p>
-                    <p className="">{photo.description}</p>
+            <p className="">{photo.description}</p>
         </div>
     </div>;
 }
