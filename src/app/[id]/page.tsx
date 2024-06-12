@@ -15,10 +15,10 @@ export default function ServicePage(
         params: {id: string};
     }) {
         const photo: ServiceType = serviceData.find((p) => p.id === id) !;
-    return <div>
-        <div className="section-container">
-            <div className="grid xl:grid-cols-6 sm:grid-cols-1 gap-3">
-                <div className="col-span-2">
+    return <div className="">
+        <div className="bg-gradient-to-b from-slate-600 to-slate-800 xl:px-44 sm:px-10 py-10">
+            <div className="grid xl:grid-cols-6 sm:grid-cols-1">
+                <div className="col-span-2 p-3">
                     <ul>
                         <li className="my-5">
                             <div className="flex">
@@ -82,7 +82,7 @@ export default function ServicePage(
                             </p>
                         </div>
                     </div>
-                    <div className="bg-gradient-to-b from-gray-600 to-gray-500 p-3">
+                    <div className="bg-gradient-to-b from-slate-600 to-slate-400 p-3">
                         <form action="#">
                             <textarea name="proposal" id="proposal" className="form-input">
                                 Please describe your request - we usually respond within 1 hour on business days.
@@ -127,7 +127,7 @@ export default function ServicePage(
                     </div>
                 </div>
                 <div className="grid-cols-1">
-                    <div className="bg-gradient-to-b from-gray-600 to-gray-500 p-3">
+                    <div className="bg-gradient-to-b from-slate-600 to-slate-500 p-3 h-full">
                         <h1 className="font-bold">Our Contacts</h1>
                         <ul className="my-5 font-light">
                             <li className="mb-5">
@@ -164,8 +164,10 @@ export default function ServicePage(
                     
                 </div>
             </div>
-            <p className="text-2xl font-bold">{photo.title}</p>
-            <p className="">{photo.description}</p>
+        </div>
+        <div className="section-container">
+        <p className="text-2xl font-bold">{photo.title}</p>
+        <p className="">{photo.description}</p>
         </div>
     </div>;
 }
