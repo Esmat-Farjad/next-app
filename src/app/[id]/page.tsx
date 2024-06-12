@@ -167,7 +167,8 @@ export default function ServicePage(
         </div>
         <div className="section-container">
             <div className="heading">
-                <p className="text-2xl font-bold">{photo.title}</p>
+                <p className="text-4xl font-bold">{photo.title}
+                </p>
                 <p className="">{photo.description}</p>
             </div>
 
@@ -208,6 +209,24 @@ export default function ServicePage(
                         tailored to your requirements, surpassing the scope of a conventional 
                         corporate presentation or sales pitch.
                     </p>
+                </div>
+            </div>
+            <div className="grid-cols-1 bg-slate-800 pb-5 px-3">
+                <div className="flex justify-center items-center">
+                    <Image src="/offer.svg" width={150} height={150} alt="icon"></Image>
+                </div>
+                <div className="">
+                    <h1 className="font-bold text-xl text-center">3. Get Proposal </h1>
+                    <p className="font-light text-sm text-center">
+                    Our proposal is free of charge and will give you a 
+                    comprehensive understanding of the service scope or 
+                    solution we offer. It always includes:
+                    </p>
+                    <ol className="px-5 font-light text-sm list-decimal">
+                        <li>Project timelines.</li>
+                        <li>Identification of risks (if any) and our mitigation strategies.</li>
+                        <li>Deliverables focused on the business value.</li>
+                    </ol>
                 </div>
             </div>
 
