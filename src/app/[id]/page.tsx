@@ -168,14 +168,44 @@ export default function ServicePage(
         <div className="section-container">
         <p className="text-2xl font-bold">{photo.title}</p>
         <p className="">{photo.description}</p>
-        <div className="grid xl:grid-cols-6 sm:grid-cols-1">
-            <div className="col-span-2">
-                <h1 className="font-bold">heading</h1>
+        <div className="grid xl:grid-cols-6 sm:grid-cols-1 my-5">
+            <div className="col-span-1">
+                <h1 className="font-bold text-xl">1. Send us a request </h1>
+                <Image src="/email.svg" width={250} height={250} alt="icon"></Image>
             </div>
-            <div className="col-span-4">
-                this is the information
+            <div className="col-span-5 my-auto xl:w-1/2 sm:w-full p-5">
+                <p className="mb-5 ">
+                    Please be advised that our team is readily available 
+                    to assist you through various communication channels, 
+                    including our contact form, live chat, email, or telephone.
+                </p>
+                <p>
+                    Kindly provide a comprehensive description of your idea, 
+                    and our seasoned consultants will diligently collaborate 
+                    with you to formulate detailed project requirements, devise a 
+                    feasible solution concept, and promptly evaluate its technical 
+                    and economic viability.
+
+                    We arrange a preliminary consultation with our solution team, which is non-binding, aimed at delving into your circumstances and discerning potential value-enhancing prospects for your consideration. Throughout this engagement, we endeavor to address your specific inquiries and furnish bespoke insights tailored to your requirements, surpassing the scope of a conventional corporate presentation or sales pitch.
+                </p>
+            </div>
+            <div className="col-span-1">
+                <h1 className="font-bold text-xl">1. Send us a request </h1>
+                <Image src="/email.svg" width={250} height={250} alt="icon"></Image>
+            </div>
+            <div className="col-span-5 my-auto xl:w-1/2 sm:w-full p-5">
+                <p>
+                    We arrange a preliminary consultation with our solution team, 
+                    which is non-binding, aimed at delving into your circumstances 
+                    and discerning potential value-enhancing prospects for your 
+                    consideration. Throughout this engagement, we endeavor to 
+                    address your specific inquiries and furnish bespoke insights 
+                    tailored to your requirements, surpassing the scope of a conventional 
+                    corporate presentation or sales pitch.
+                </p>
             </div>
         </div>
-        </div>
-    </div>;
+    </div>
+</div>
+
 }
