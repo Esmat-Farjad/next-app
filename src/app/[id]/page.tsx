@@ -5,6 +5,7 @@ import { PiTrophy, PiUsers } from "react-icons/pi";
 import { LiaAwardSolid } from "react-icons/lia";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import { FiUploadCloud } from "react-icons/fi";
+import { IoIosCall } from "react-icons/io";
 export default function ServicePage(
     {
         params:{id},
@@ -17,7 +18,7 @@ export default function ServicePage(
             <div className="grid xl:grid-cols-6 sm:grid-cols-1 gap-3">
                 <div className="col-span-2">
                     <ul>
-                        <li className="my-2">
+                        <li className="my-5">
                             <div className="flex">
                                 <div className="p-2">
                                     <PiTrophy className="text-3xl"/>
@@ -28,7 +29,7 @@ export default function ServicePage(
                                 </div>
                             </div>
                         </li>
-                        <li className="my-2">
+                        <li className="my-5">
                             <div className="flex">
                                 <div className="p-2">
                                     <LiaAwardSolid className="text-3xl"/>
@@ -39,7 +40,7 @@ export default function ServicePage(
                                 </div>
                             </div>
                         </li>
-                        <li className="my-2">
+                        <li className="my-5">
                             <div className="flex">
                                 <div className="p-2">
                                     <IoBriefcaseOutline className="text-3xl"/>
@@ -52,7 +53,7 @@ export default function ServicePage(
                                 </div>
                             </div>
                         </li>
-                        <li className="my-2">
+                        <li className="my-5">
                             <div className="flex">
                                 <div className="p-2">
                                     <PiUsers className="text-3xl"/>
@@ -79,7 +80,7 @@ export default function ServicePage(
                             </p>
                         </div>
                     </div>
-                    <div className="bg-gray-500 p-3">
+                    <div className="bg-gradient-to-b from-gray-600 to-gray-500 p-3">
                         <form action="#">
                             <textarea name="proposal" id="proposal" className="form-input">
                                 Please describe your request - we usually respond within 1 hour on business days.
@@ -124,10 +125,21 @@ export default function ServicePage(
                     </div>
                 </div>
                 <div className="grid-cols-1">
-                    <p className="text-2xl font-bold">{photo.title}</p>
-                    <p className="">{photo.description}</p>
+                    <div className="bg-gradient-to-b from-gray-600 to-gray-500 p-5">
+                        <h1 className="font-bold">Our Contacts</h1>
+                        <ul>
+                            <li>
+                                <span className="bg-cyan-500 pb-1 px-1 rounded-full">
+                                <IoIosCall className="inline text-sm"/>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
+            <p className="text-2xl font-bold">{photo.title}</p>
+                    <p className="">{photo.description}</p>
         </div>
     </div>;
 }
