@@ -67,7 +67,7 @@ export default function ServicePage(
                 <div className="col-span-3">
                     <div className="flex bg-gray-700">
                         <div className="">
-                            <Image src={photo.src} alt={photo.title} width={400}></Image>
+                            <Image src="/image.png" alt={photo.title} width={500} height={300}></Image>
                         </div>
                         <div className="p-3">
                             <h1 className="text-xl font-bold">Talk to the solution team</h1>
