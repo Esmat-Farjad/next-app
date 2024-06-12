@@ -168,6 +168,14 @@ export default function ServicePage(
         <div className="section-container">
         <p className="text-2xl font-bold">{photo.title}</p>
         <p className="">{photo.description}</p>
+        <div className="grid xl:grid-cols-6 sm:grid-cols-1">
+            <div className="col-span-2">
+                <h1 className="font-bold">heading</h1>
+            </div>
+            <div className="col-span-4">
+                this is the information
+            </div>
+        </div>
         </div>
     </div>;
 }
