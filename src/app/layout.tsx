@@ -58,7 +58,7 @@ export default function RootLayout({
               </ul>
           </div>
         </header>
-        <div className="fixed bottom-20 right-10 left-90 z-100">
+        <div className="fixed bottom-20 right-10 left-90 z-100 hidden">
           <div className="bg-slate-600 border border-b-0 border-cyan-600 rounded-lg rounded-b-none border-b-none w-60 h-80">
               <div className="p-2 bg-slate-800 rounded-t-lg">
                 <TbMessageChatbot className="text-4xl"/>
