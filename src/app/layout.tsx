@@ -7,6 +7,8 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
 import { CiMenuKebab } from "react-icons/ci";
+import { TbMessageChatbot } from "react-icons/tb";
+import { IoSend } from "react-icons/io5";
 
 
 // export const metadata: Metadata = {
@@ -34,6 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={"bg-slate-900 bg-blend-darken text-white relative"}>
+        
         <header className="">
           <div className="xl:mx-44 lg:mx-44 sm:mx-16 md:mx-16 py-5">
             <Link href="/" className="font-bold text-2xl inline mr-4">Navbar</Link>
@@ -55,9 +58,38 @@ export default function RootLayout({
               </ul>
           </div>
         </header>
-       
+        <div className="fixed bottom-20 right-10 left-90 z-100">
+          <div className="bg-slate-600 border border-b-0 border-cyan-600 rounded-lg rounded-b-none border-b-none w-60 h-80">
+              <div className="p-2 bg-slate-800 rounded-t-lg">
+                <TbMessageChatbot className="text-4xl"/>
+              </div>
+              <div className="p-5">
+                <div className="mb-2">
+                  <span className="bg-cyan-500 p-2 rounded-full">
+                    <TbMessageChatbot className="inline"/>
+                  </span>
+                </div>
+                <span className="text-xs text-black bg-blue-500 ml-6 p-2 rounded-lg">
+                  Hello How can I help you
+                </span>
+              </div>
+          </div>
+          <div className="bg-slate-600 border border-t-0 border-cyan-600 rounded-t-none rounded-lg w-60">
+            <form action="#" className="relative">
+              <label htmlFor="message" className="text-xs px-3">start conversation by saying <b>Hello</b> </label>
+              <input type="text" className="form-input" placeholder="type your message..." />
+              <button type="submit" className="absolute top-8 right-5 z-150">
+                <IoSend className="inline text-2xl text-teal-500 cursor-pointer hover:text-teal-400"/>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div className="fixed bottom-10 right-10 left-90 z-100">
+            <span className="rounded-full pt-3 px-3 pb-3.5 border border-cyan-700 bg-cyan-500 cursor-pointer">
+              <TbMessageChatbot className="text-2xl inline"/>
+            </span>
+        </div> 
         {children}
-      
         {/* footer */}
         <div className="border-t border-gray-600 p-5">
           <div className="text-center text-gray-600 hover:text-white duration-300">
