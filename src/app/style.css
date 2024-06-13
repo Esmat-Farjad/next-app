@@ -50,7 +50,7 @@
 }
 @layer components{
     .anchor-link{
-        @apply text-gray-600 hover:text-white duration-300;
+        @apply text-gray-600 hover:text-white duration-300 cursor-pointer;
     }
 }
 .eye-icon{
