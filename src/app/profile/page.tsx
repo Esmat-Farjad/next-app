@@ -14,16 +14,14 @@ export default function Profile(){
     <div className="grid xl:grid-cols-2 lg:grid-cols-2 sm:grid-cols-1 gap-2">
         <div className="bg-gray-600 rounded p-5">
             <div className="flex justify-center items-center">
-                
                 <Image src="/offer.svg" className="rounded-full border p-3" width={100} height={100} alt="user profile"></Image>
-                
             </div>
             <div className="text-center">
-            <h1 className="font-bold">Your Name</h1>
-            <p className="">this is the description</p>
-            <p className="">Address description</p>
-            <button className="btn-transparent">follow</button>
-            <button className="btn-transparent">Message</button>
+                <h1 className="font-bold">Your Name</h1>
+                <p className="">this is the description</p>
+                <p className="">Address description</p>
+                <button className="btn-transparent">follow</button>
+                <button className="btn-transparent">Message</button>
             </div>
         </div>
         <div className="bg-gray-600 rounded p-5">
