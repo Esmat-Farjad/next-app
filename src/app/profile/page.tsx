@@ -22,7 +22,8 @@ export default function Profile(){
             <h1 className="font-bold">Your Name</h1>
             <p className="">this is the description</p>
             <p className="">Address description</p>
-            <button className="transparent-btn">follow</button>
+            <button className="btn-transparent">follow</button>
+            <button className="btn-transparent">Message</button>
             </div>
         </div>
         <div className="bg-gray-600 rounded p-5">
