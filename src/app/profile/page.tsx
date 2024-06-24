@@ -28,9 +28,26 @@ export default function Profile(){
         <div className="bg-gray-600 rounded p-5">
             <h1 className="font-bold text-2xl">Esmatullah Hashimi</h1>
             <p className="text-slate-300 p-0 m-0">Full Stack web developer</p>
-            <div className="border-b border-slate-500 p-4">
+            <div className="">
                 <Link href="/" className="mr-3 hover:border-b-4 border-sky-500 p-4">About</Link>
                 <Link href="/" className="mr-3 hover:border-b-4 border-sky-500 p-4">Timeline</Link>
+                <hr className=""/>
+                <div className="grid grid-cols-2">
+                    <div className="font-bold">
+                        <p className="p-3">User ID</p>
+                        <p className="p-3">Full Name</p>
+                        <p className="p-3">Email</p>
+                        <p className="p-3">Contact</p>
+                        <p className="p-3">Profession</p>
+                    </div>
+                    <div className="font-bold">
+                    <p className="p-3">User ID</p>
+                        <p className="p-3">Full Name</p>
+                        <p className="p-3">Email</p>
+                        <p className="p-3">Contact</p>
+                        <p className="p-3">Profession</p>
+                    </div>
+                </div>
             </div>
         </div>
         
