@@ -31,7 +31,7 @@ export default function Profile(){
             <div className="">
                 <Link href="/" className="mr-3 hover:border-b-4 border-sky-500 p-4">About</Link>
                 <Link href="/" className="mr-3 hover:border-b-4 border-sky-500 p-4">Timeline</Link>
-                <hr className=""/>
+                <hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-500"/>
                 <div className="grid grid-cols-2">
                     <div className="font-bold">
                         <p className="p-3">User ID</p>
