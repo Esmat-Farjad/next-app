@@ -25,8 +25,10 @@ export default function Profile(){
             </div>
         </div>
         <div className="bg-gray-600 rounded p-5">
-            information holder
+            <h1 className="font-bold text-2xl">Esmatullah Hashimi</h1>
+            <p className="text-slate-300 p-0 m-0">Full Stack web developer</p>
         </div>
+        
     </div>
    </div>
    </>);
