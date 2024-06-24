@@ -29,8 +29,8 @@ export default function Profile(){
             <h1 className="font-bold text-2xl">Esmatullah Hashimi</h1>
             <p className="text-slate-300 p-0 m-0">Full Stack web developer</p>
             <div className="border-b border-slate-500 p-4">
-                <Link href="/" className="mr-3 border-b-4 border-sky-500">About</Link>
-                <Link href="/" className="mr-3 border-b-4 border-sky-500">Timeline</Link>
+                <Link href="/" className="mr-3 hover:border-b-4 border-sky-500 p-4">About</Link>
+                <Link href="/" className="mr-3 hover:border-b-4 border-sky-500 p-4">Timeline</Link>
             </div>
         </div>
         
