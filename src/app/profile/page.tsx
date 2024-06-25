@@ -10,9 +10,9 @@ export const metadata = {
 export default function Profile(){
    return (<>
    <div className="section-container">
-    <div className="text-center">
-       <h1 className="font-bold text-2xl">Profile</h1>
-       <small className="p-0 m-0">[this is the description section of the profile]</small>
+    <div className="text-center mb-10">
+       <h1 className="font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-300">Profile</h1>
+       <small className="p-0 m-0 ">[this is the description section of the profile]</small>
     </div>
     <div className="grid xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 bg-gray-600 rounded p-5">
         <div className="grid-cols-1">
