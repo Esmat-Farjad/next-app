@@ -92,16 +92,26 @@ export default function Profile(){
                         </div>
                     </div>
                     <div className="grid col-span-2 font-bold">
-                        <form action="#" className="p-5 mx-5">
-                            
-                            <label htmlFor="username">Username</label>
-                            <input type="text" id="username" name="username" className="form-input" />
-                            <label htmlFor="fullname">Full Name</label>
-                            <input type="text" id="fullname" name="fullname" className="form-input" />
-                            <label htmlFor="email">Email</label>
-                            <input type="email" id="email" name="email" className="form-input" />
-                            <label htmlFor="mobile">Mobile</label>
-                            <input type="text" id="mobile" name="mobile" className="form-input" />
+                        <div className="font-bold mt-5 mx-5">
+                            <p className="text-2xl">Personal Details</p>
+                        </div>
+                        <form action="#" className="p-5">
+                            <div className="grid grid-cols-2 gap-3">
+                                <div className="first-col">
+                                    <label htmlFor="username">Username</label>
+                                    <input type="text" id="username" name="username" className="form-input" />
+                                    <label htmlFor="email">Email</label>
+                                    <input type="email" id="email" name="email" className="form-input" />
+                                </div>
+                                <div className="first-col">
+                                    <label htmlFor="fullname">Full Name</label>
+                                    <input type="text" id="fullname" name="fullname" className="form-input" />
+                                    <label htmlFor="mobile">Mobile</label>
+                                    <input type="text" id="mobile" name="mobile" className="form-input" />
+                                </div>
+                            </div>
+                            <label htmlFor="profession">Profession</label>
+                            <input type="text" id="profession" name="profession" className="form-input" />
                             <div className="text-center mt-10">
                                 <button type="submit" className="btn-transparent">Update Profile</button>
                                 <button type="reset" className="btn-transparent">Reset</button>
