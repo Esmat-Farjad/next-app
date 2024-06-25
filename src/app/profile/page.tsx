@@ -29,28 +29,33 @@ export default function Profile(){
             <h1 className="font-bold text-2xl">Esmatullah Hashimi</h1>
             <p className="text-sky-500 p-0 m-0">Full Stack web developer</p>
             <div className="">
-                <Link href="/" className="mr-3 hover:border-b-4 border-sky-500 p-4">About</Link>
+                <Link href="/" className="mr-3 border-b-4 border-sky-500 p-4">About</Link>
                 <Link href="/" className="mr-3 hover:border-b-4 border-sky-500 p-4">Timeline</Link>
                 <hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-500"/>
                 <div className="grid grid-cols-2">
                     <div className="">
-                        <p className="font-bold">User ID</p>
-                        <p className="text-gray-300 border-b border-gray-500">username</p>
-                        <p className="font-bold">Full Name</p>
-                        <p className="text-gray-300 border-b border-gray-500">your name</p>
-                        <p className="font-bold">Email</p>
-                        <p className="text-gray-300 border-b border-gray-500">user.name@gmail.com</p>
-                        <p className="font-bold">Contact</p>
-                        <p className="text-gray-300 border-b border-gray-500">+93 (0) 74 862 1879</p>
-                        <p className="font-bold">Profession</p>
-                        <p className="text-gray-300 border-b border-gray-500">Software Developer</p>
+                        <div className="my-3">
+                            <p className="font-bold">User ID</p>
+                            <p className="text-gray-300 border-b border-gray-500">username</p>
+                        </div>
+                        <div className="my-3">
+                            <p className="font-bold">Full Name</p>
+                            <p className="text-gray-300 border-b border-gray-500">your name</p>
+                        </div>
+                        <div className="my-3">
+                            <p className="font-bold">Email</p>
+                            <p className="text-gray-300 border-b border-gray-500">user.name@gmail.com</p>
+                        </div>
+                        <div className="my-3">
+                            <p className="font-bold">Contact</p>
+                            <p className="text-gray-300 border-b border-gray-500">+93 (0) 74 862 1879</p>
+                        </div>
+                        <div className="my-3">
+                            <p className="font-bold">Profession</p>
+                            <p className="text-gray-300 border-b border-gray-500">Software Developer</p>
+                        </div>
                     </div>
                     <div className="font-bold">
-                    <p className="p-3">User ID</p>
-                        <p className="p-3">Full Name</p>
-                        <p className="p-3">Email</p>
-                        <p className="p-3">Contact</p>
-                        <p className="p-3">Profession</p>
                     </div>
                 </div>
             </div>
