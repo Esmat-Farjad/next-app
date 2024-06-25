@@ -26,12 +26,11 @@ export default function BlogDetails({params}: Props){
         <div className="section-container bg-gradient-to-b from-slate-700 to slate-500 rounded">
             <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1">
                 <div className="form-container col-span-2">
-                    <form action="#">
-                    <div className="grid grid-cols-2">
+                    <form action="#" className="p-5">
+                    <div className="grid grid-cols-2 gap-3">
                         <div className="">
                             <label htmlFor="title">Post Title</label>
                             <input type="text" id="title" name="title" className="form-input" />
-                    
                         </div>
                         <div className="">
                             <label htmlFor="file">Default size</label>
@@ -39,7 +38,8 @@ export default function BlogDetails({params}: Props){
 
                         </div>
                     </div>
-                    <textarea name="description" id="description" className="form-input mt-2"></textarea>
+                    <label htmlFor="description">Description</label>
+                    <textarea name="description" id="description" className="form-input mt-2" placeholder="what is in your mind..."></textarea>
                     </form>
                 </div>
             </div>
