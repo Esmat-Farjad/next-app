@@ -68,8 +68,8 @@ export default function Profile(){
                         <Link href="/" >Timeline</Link>
                     </span>
                 </div>
-                <div className="grid grid-cols-2">
-                    <div className="">
+                <div className="grid grid-cols-3">
+                    <div className="grid-cols-1">
                         <div className="my-3">
                             <p className="font-bold">User ID</p>
                             <p className="text-gray-300 border-b border-gray-500">username</p>
@@ -91,8 +91,22 @@ export default function Profile(){
                             <p className="text-gray-300 border-b border-gray-500">Software Developer</p>
                         </div>
                     </div>
-                    <div className="font-bold">
-                        <form action=""></form>
+                    <div className="grid col-span-2 font-bold">
+                        <form action="#" className="p-5 mx-5">
+                            
+                            <label htmlFor="username">Username</label>
+                            <input type="text" id="username" name="username" className="form-input" />
+                            <label htmlFor="fullname">Full Name</label>
+                            <input type="text" id="fullname" name="fullname" className="form-input" />
+                            <label htmlFor="email">Email</label>
+                            <input type="email" id="email" name="email" className="form-input" />
+                            <label htmlFor="mobile">Mobile</label>
+                            <input type="text" id="mobile" name="mobile" className="form-input" />
+                            <div className="text-center mt-10">
+                                <button type="submit" className="btn-transparent">Update Profile</button>
+                                <button type="reset" className="btn-transparent">Reset</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
