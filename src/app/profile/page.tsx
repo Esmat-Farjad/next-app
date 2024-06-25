@@ -19,12 +19,12 @@ export default function Profile(){
                 <div className="inline-block relative">
                     <Image src="/profile.png" 
                     className="border border-gray-600 rounded " 
-                    width={200} height={100} alt="user profile">
+                    width={250} height={150} alt="user profile">
                     </Image>
                     <div className="absolute top-90 bottom-0 left-0 right-0 inline bg-gray-900/75 p-1">
                     <p className="text-center text-sm text-white">
                         <Link href="/">
-                            <FaUserEdit className="inline mr-1 pb-1"/>update
+                            <FaUserEdit className="inline mr-1 pb-1"/>change photo
                         </Link>
                     </p>
                     </div>
