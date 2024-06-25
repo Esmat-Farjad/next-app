@@ -21,5 +21,29 @@ export const generateMetadata = async ({ params, }: Props): Promise<Metadata> =>
 };
 
 export default function BlogDetails({params}: Props){
-    return <h1>Blog Details of blog ID {params.blogId}</h1>;
+    return (<>
+    <div className="bg-slate-800 xl:px-44 sm:px-10 py-10">
+        <div className="section-container bg-gradient-to-b from-slate-700 to slate-500 rounded">
+            <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1">
+                <div className="form-container col-span-2">
+                    <form action="#">
+                    <div className="grid grid-cols-2">
+                        <div className="">
+                            <label htmlFor="title">Post Title</label>
+                            <input type="text" id="title" name="title" className="form-input" />
+                    
+                        </div>
+                        <div className="">
+                            <label htmlFor="file">Default size</label>
+                            <input className="form-input file:bg-gradient-to-r from-pink-500 to-pink-800 file:rounded-lg file:outline-none file:border-none file:text-white" id="file" type="file"/>
+
+                        </div>
+                    </div>
+                    <textarea name="description" id="description" className="form-input mt-2"></textarea>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </>);
 }

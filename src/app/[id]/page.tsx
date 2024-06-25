@@ -138,7 +138,7 @@ export default function ServicePage(
                             <li className="mb-5">
                                 <span className="bg-cyan-500 pb-1 px-1 rounded-full">
                                 <HiOutlineMail className="inline text-xs"/> 
-                                </span> info@webservices.Company
+                                </span> info@webservices.com
                             </li>
                             <li className="mb-5">
                                 <span className="">
