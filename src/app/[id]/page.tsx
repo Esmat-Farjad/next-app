@@ -84,8 +84,8 @@ export default function ServicePage(
                     </div>
                     <div className="bg-gradient-to-b from-slate-600 to-slate-400 p-3">
                         <form action="#">
-                            <textarea name="proposal" id="proposal" className="form-input">
-                                Please describe your request - we usually respond within 1 hour on business days.
+                            <textarea name="proposal" id="proposal" className="form-input" 
+                            placeholder="Please describe your request - we usually respond within 1 hour on business days.">
                             </textarea>
                             
                             <div className="flex items-center justify-center w-full my-1">
