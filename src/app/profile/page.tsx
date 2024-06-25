@@ -34,21 +34,21 @@ export default function Profile(){
             </div>
             <div className="m-10">
                 <p className="font-light my-5">Work Link</p>
-                <Link href='/' className="block"> 
+                <Link href='/' className="block py-1"> 
                     <FcApproval className="inline-block mr-2 mb-1 text-lg"/>
-                    <span className="text-gray-400">Task Management software</span>
+                    <span className="text-gray-300 hover:text-white duration-300">Task Management software</span>
                 </Link>
-                <Link href='/' className="block"> 
+                <Link href='/' className="block py-1"> 
                     <FcApproval className="inline-block mr-2 mb-1 text-lg"/>
-                    <span className="text-gray-400">Online shopping Application</span>
+                    <span className="text-gray-300 hover:text-white duration-300">Online shopping Application</span>
                 </Link>
-                <Link href='/' className="block"> 
+                <Link href='/' className="block py-1"> 
                     <FcApproval className="inline-block mr-2 mb-1 text-lg"/>
-                    <span className="text-gray-400">E-Commerce software</span>
+                    <span className="text-gray-300 hover:text-white duration-300">E-Commerce software</span>
                 </Link>
-                <Link href='/' className="block"> 
+                <Link href='/' className="block py-1"> 
                     <FcApproval className="inline-block mr-2 mb-1 text-lg"/>
-                    <span className="text-gray-400">Med+ Medicine management software</span>
+                    <span className="text-gray-300 hover:text-white duration-300">Med+ Medicine management software</span>
                 </Link>
                 <div className="my-10">
                 <button className="btn-transparent">follow</button>
@@ -56,11 +56,10 @@ export default function Profile(){
                 </div>
             </div>
         </div>
-        <div className="col-span-2">
-
+        <div className="col-span-2 py-5">
             <h1 className="font-bold text-2xl">Esmatullah Hashimi</h1>
             <p className="text-sky-500 p-0 m-0">Full Stack web developer</p>
-            <div className="">
+            <div className="my-10">
                 <div className="border-b border-gray-500 py-3.5">
                     <span className="mr-3 border-b-2 border-sky-500 pb-4 px-3">
                         <Link href="/" >About</Link>
@@ -93,6 +92,7 @@ export default function Profile(){
                         </div>
                     </div>
                     <div className="font-bold">
+                        <form action=""></form>
                     </div>
                 </div>
             </div>
