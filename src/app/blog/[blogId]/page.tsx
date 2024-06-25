@@ -35,7 +35,7 @@ export default function BlogDetails({params}: Props){
                         </div>
                         <div className="">
                             <label htmlFor="file">Default size</label>
-                            <input className="form-input file:bg-gradient-to-r from-pink-500 to-pink-800 file:rounded-lg file:outline-none file:border-none file:text-white" id="file" type="file"/>
+                            <input className="form-input file-input" id="file" type="file"/>
 
                         </div>
                     </div>
