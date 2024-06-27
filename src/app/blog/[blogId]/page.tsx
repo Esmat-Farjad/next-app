@@ -31,6 +31,7 @@ export default function BlogDetails({params}: Props){
                 <div className="form-container col-span-2">
                     <div className="mt-8">
                         <p className="text-center text-2xl font-bold">Update Post</p>
+                        <p className="text-center">update your post</p>
                     </div>
                     <form action="#" className="p-5">
                     <div className="grid grid-cols-2 gap-3">
@@ -44,8 +45,9 @@ export default function BlogDetails({params}: Props){
                         </div>
                     </div>
                     <label htmlFor="description">Description</label>
-                    <textarea name="description" id="description" className="form-input mt-2" 
+                    <textarea name="description" id="description"rows={5} className="form-input mt-2" 
                     placeholder="what is in your mind..."></textarea>
+                    <span className="text-sm">34/1000</span>
                     <div className="text-center my-5">
                         <button type="submit" className="btn-transparent">Post</button>
                         <button type="reset" className="btn-transparent">Discard</button>
