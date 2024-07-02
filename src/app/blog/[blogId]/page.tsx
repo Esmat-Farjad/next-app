@@ -65,10 +65,10 @@ export default function BlogDetails({params}: Props){
                             <IoAdd className="inline text-2xl mb-1 mr-2"/><Link href="#">Create Post</Link>
                         </li>
                         <li className="py-2 text-gray-400 hover:text-white duration-500">
-                            <MdOutlineViewCarousel className="inline text-2xl mb-1 mr-2"/><Link href="#">View Posts</Link>
+                            <MdOutlineViewCarousel className="inline text-2xl mb-1 mr-2"/><Link href="/blog">View Posts</Link>
                         </li>
                         <li className="py-2 text-gray-400 hover:text-white duration-500">
-                            <MdFeed className="inline text-2xl mb-1 mr-2"/><Link href="#">My Posts</Link>
+                            <MdFeed className="inline text-2xl mb-1 mr-2"/><Link href="/">My Posts</Link>
                         </li>
                     </ul>
                 </div>
